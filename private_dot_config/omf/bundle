@@ -1,0 +1,13 @@
+package aws
+package config
+package foreign-env
+package grc
+package https://github.com/ribugent/plugin-nvm
+package spark
+package z
+theme agnoster
+theme bobthefish
+theme default
+theme gentoo
+theme sashimi
+theme shellder
