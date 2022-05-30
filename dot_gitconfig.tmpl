@@ -1,0 +1,37 @@
+[user]
+        name = {{ .git.name }}
+        email = {{ .git.work.email }}
+        signingkey = {{ .git.work.signkey }}
+[push]
+        default = simple
+[pull]
+        rebase = merges
+[diff]
+        tool = meld
+        ff = false
+[mergetool]
+        prompt = false
+[commit]
+        verbose = true
+        gpgsign = true
+
+[url "https://github.com"]
+	insteadOf = git://github.com
+
+[includeIf "gitdir:~/Develop/*/.git"]
+        path = ~/.gitconfig-lm-hooks.inc
+
+[includeIf "gitdir:~/Develop/ribugent/"]
+	path = ~/.gitconfig-ribugent.inc
+
+[includeIf "gitdir:.local/share/chezmoi/"]
+	path = ~/.gitconfig-ribugent.inc
+
+[init]
+	defaultBranch = main
+
+[color "status"]
+	added = green bold
+#	changed = red bold strike
+	untracked = cyan
+	branch = yellow black bold ul
