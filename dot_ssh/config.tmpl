@@ -1,0 +1,12 @@
+Host github.com
+	User ribugent
+	IdentityFile ~/.ssh/github
+
+Host aur.archlinux.org
+	IdentityFile ~/.ssh/arch-aur
+	User aur
+
+# Work hosts configuration
+{{- range fromJson (passRaw "ssh/hosts") }}
+{{ template "ssh_config_host" . }}
+{{ end }}

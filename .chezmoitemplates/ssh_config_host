@@ -1,0 +1,19 @@
+Host {{ .host -}}
+{{if hasKey . "hostName" }}
+	HostName {{ .hostName}}
+{{- end -}}
+{{if hasKey . "proxyJump" }}
+	ProxyJump {{ .proxyJump}}
+{{- end -}}
+{{if hasKey . "user" }}
+	User {{ .user}}
+{{- end -}}
+{{if hasKey . "identityFile" }}
+	IdentityFile {{ .identityFile}}
+{{- end -}}
+{{if hasKey . "updateHostKeys" }}
+	UpdateHostKeys {{ .updateHostKeys}}
+{{- end -}}
+{{if hasKey . "strictHostKeyChecking" }}
+	StrictHostKeyChecking {{ .strictHostKeyChecking}}
+{{- end -}}
