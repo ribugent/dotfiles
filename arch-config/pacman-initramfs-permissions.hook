@@ -1,0 +1,13 @@
+# Do not overwrite this file because it will be replaced during updates
+[Trigger]
+Type = Path
+Operation = Install
+Operation = Upgrade
+Target = usr/lib/modules/*/vmlinuz
+Target = usr/lib/initcpio/*
+
+[Action]
+Description = Updating initramfs permissions...
+When = PostTransaction
+Exec = /bin/sh -c "chmod 600 /boot/initramfs-linux*.img"
+NeedsTargets

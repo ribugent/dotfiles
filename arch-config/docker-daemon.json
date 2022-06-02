@@ -1,0 +1,4 @@
+{
+	"experimental": true,
+	"dns": ["172.17.0.1"]
+}
