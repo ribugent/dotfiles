@@ -97,6 +97,7 @@ kinfocenter
 kipi-plugins
 kscreen
 leapp-bin
+libffi7
 libreoffice-fresh-ca
 libxcrypt-compat
 linux
