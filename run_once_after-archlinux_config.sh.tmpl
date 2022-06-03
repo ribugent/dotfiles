@@ -1,5 +1,5 @@
 #!/bin/bash
-# Packages hash: {{ include "arch-config/PKGBUILD" | sha256sum }}
+# Packages hash: {{ include "archlinux/config/PKGBUILD" | sha256sum }}
 
 OS="{{ .chezmoi.os }}"
 DISTRO="{{ .chezmoi.osRelease.id }}"
@@ -8,5 +8,5 @@ if [[ $OS -ne "linux" && $DISTRO -ne 'arch' ]]; then
 	exit 0
 fi;
 
-cd "{{ .chezmoi.workingTree }}/arch-config"
+cd "{{ .chezmoi.workingTree }}/archlinux/config"
 makepkg -f -si -c --noconfirm
