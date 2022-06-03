@@ -1,0 +1,15 @@
+aribb24
+colord
+gnome-keyring
+gvfs
+icu69
+libmicrohttpd
+libusb-compat
+libva-intel-driver
+noto-fonts-cjk
+noto-fonts-emoji
+qt5-xmlpatterns
+subversion
+webkit2gtk
+xclip
+xorg-xhost
