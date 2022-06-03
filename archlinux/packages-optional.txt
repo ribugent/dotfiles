@@ -10,6 +10,7 @@ noto-fonts-cjk
 noto-fonts-emoji
 qt5-xmlpatterns
 subversion
+tk
 webkit2gtk
 xclip
 xorg-xhost
