@@ -9,4 +9,4 @@ if [[ $OS -ne "linux" && $DISTRO -ne 'arch' ]]; then
 fi;
 
 cd "{{ .chezmoi.workingTree }}/arch-config"
-makepkg -f -si --noconfirm
+makepkg -f -si -c --noconfirm
