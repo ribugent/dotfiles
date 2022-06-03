@@ -47,6 +47,26 @@ All the files are managed using [chezmoi](https://www.chezmoi.io/), but the secr
 
 ## Included configuration
 
+### Arch Linux
+
+Some drop in configuration files are installed using `makepkg`:
+
+- SDDM
+  - Enable HiDPI in wayland
+  - Disable listening http connections in xorg
+  - Plasma Desktop settings
+- Kernel parameters
+  - Hardening
+    - Restrict `dmesg` to root only
+    - Disable `kexec` syscall
+    - Restrict pointers in proc filesystem
+  - Set swappiness to 20
+- Systemd resolved
+  - Disables default DNS servers
+  - Set DNSSEC with allow downgrade
+  - Enable stub listener to be integrated with Docker (this solve issues DNS resolutions with custom domains on VPN connections)
+- xorg: Enforce 1080p resolution on my Dell XPS 13 laptop with 4k screen
+
 ### Fish
 
 Drop-in files for `$PATH` management:
