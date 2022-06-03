@@ -52,8 +52,8 @@ package() {
 	install -Dm0644 sddm-kde_settings.conf "$pkgdir/etc/sddm.conf.d/kde_settings.conf"
 	install -Dm0644 sysctl-hardening.conf "$pkgdir/etc/sysctl.d/51-hardening.conf"
 	install -Dm0644 sysctl-swappiness.conf "$pkgdir/etc/sysctl.d/99-swappiness.conf"
-	install -Dm0644 systemd-resolved-disable-default-dns.conf "$pkgdir/etc/systemd/resolved.conf.d/disable-default-dns.conf"
-	install -Dm0644 systemd-resolved-dnssec.conf "$pkgdir/etc/systemd/resolved.conf.d/dnssec.conf"
-	install -Dm0644 systemd-resolved-docker.conf "$pkgdir/etc/systemd/resolved.conf.d/docker.conf"
+	install -Dm0644 systemd-resolved-disable-default-dns.conf "$pkgdir/usr/lib/systemd/resolved.conf.d/disable-default-dns.conf"
+	install -Dm0644 systemd-resolved-dnssec.conf "$pkgdir/usr/lib/systemd/resolved.conf.d/dnssec.conf"
+	install -Dm0644 systemd-resolved-docker.conf "$pkgdir/usr/lib/systemd/resolved.conf.d/docker.conf"
 	install -Dm0644 xorg-monitor.conf "$pkgdir/etc/X11/xorg.conf.d/monitor.conf"
 }
