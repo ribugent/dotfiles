@@ -1,0 +1,37 @@
+#!//bin/bash
+# Packages hash: {{ include "archlinux/packages.txt" | sha256sum }}
+# Packages hash: {{ include "archlinux/packages-optional.txt" | sha256sum }}
+
+
+function findMissing() {
+	local PACKAGES=$1
+
+	for PACKAGE in $PACKAGES; do
+		if ! pacman -Qi $PACKAGE > /dev/null 2>&1; then
+			echo $PACKAGE
+		fi
+	done
+}
+
+OS="{{ .chezmoi.os }}"
+DISTRO="{{ .chezmoi.osRelease.id }}"
+
+if [[ $OS -ne "linux" && $DISTRO -ne 'arch' ]]; then
+	exit 0
+fi;
+
+PACKAGES=$(cat archlinux/packages.txt)
+MISSING_PACKAGES=$(findMissing "$PACKAGES")
+
+PACKAGES_OPTIONAL=$(cat archlinux/packages-optional.txt)
+MISSING_PACKAGES_OPTIONAL=$(findMissing "$PACKAGES_OPTIONAL")
+
+if [ ! -z "$MISSING_PACKAGES" ]; then
+	echo "Installing missing packages: $MISSING_PACKAGES"
+	yay -S --noconfirm $MISSING_PACKAGES
+fi
+
+if [ ! -z "$MISSING_PACKAGES_OPTIONAL" ]; then
+	echo "Installing missing optional pacakges dependencies: $MISSING_PACKAGES_OPTIONAL"
+	yay -S --asdeps --noconfirm $MISSING_PACKAGES_OPTIONAL
+fi

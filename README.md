@@ -12,6 +12,8 @@ All the files are managed using [chezmoi](https://www.chezmoi.io/), but the secr
 - [pass](https://www.passwordstore.org/)
 - [gnupg](https://gnupg.org/)
 - [git](https://git-scm.com/)
+- [yay](https://github.com/Jguer/yay) (Arch Linux only)
+- base-devel[\[1\]](https://archlinux.org/groups/x86_64/base-devel/)[\[2\]](https://archlinux.org/groups/any/base-devel/) packages (Arch Linux only)
 - My gpg keys 🙈
 
 ## Bootstrapping
@@ -49,7 +51,9 @@ All the files are managed using [chezmoi](https://www.chezmoi.io/), but the secr
 
 ### Arch Linux
 
-Some drop in configuration files are installed using `makepkg`:
+Installing automatically packages and optional package dependencies using [yay](https://github.com/Jguer/yay), the lists can be found in [1](arch-config/packages.txt) and [2](arch-config/packages-optional.txt).
+
+Some drop in configuration system files are installed using `makepkg`:
 
 - SDDM
   - Enable HiDPI in wayland
