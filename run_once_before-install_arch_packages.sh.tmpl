@@ -20,6 +20,8 @@ if [[ $OS -ne "linux" && $DISTRO -ne 'arch' ]]; then
 	exit 0
 fi;
 
+cd "{{ .chezmoi.workingTree }}"
+
 PACKAGES=$(cat archlinux/packages.txt)
 MISSING_PACKAGES=$(findMissing "$PACKAGES")
 
