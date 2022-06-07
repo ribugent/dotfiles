@@ -105,18 +105,18 @@ Currently I'm using [oh-my-fish](https://github.com/oh-my-fish/oh-my-fish). The 
 - Customize colours
 - `main` as a default branch on init
 
-# GnuPG
+### GnuPG
 
 Set `pinentry-qt` as the default pinentry program.
 
-## Gradle
+### Gradle
 
 Disable ram consuming gradle daemon... I have 16GB of RAM, but it's not enough sometimes.
 
-## Ssh
+### Ssh
 
 Basic ssh configuration with known host and rendering work sensitive hosts from the secret store using a template.
 
-## Yay (Arch Linux only)
+### Yay (Arch Linux only)
 
 Setups system java, perl and python versions to avoid issues when building packages.
