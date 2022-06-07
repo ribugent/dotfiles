@@ -16,7 +16,6 @@ replaces=()
 backup=(
 	"etc/docker/daemon.json"
 	"etc/sddm.conf.d/kde_settings.conf"
-	"etc/xdg/reflector/reflector.conf"
 )
 options=()
 install="config.install"
