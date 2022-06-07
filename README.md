@@ -113,6 +113,13 @@ Set `pinentry-qt` as the default pinentry program.
 
 Disable ram consuming gradle daemon... I have 16GB of RAM, but it's not enough sometimes.
 
+### Jenv
+
+Automatically register and refresh jdk versions using systemd user units
+
+- [jenv-refresh.path](https://github.com/ribugent/dotfiles/blob/main/private_dot_config/systemd/user/jenv-refresh.path)
+- [jenv-refresh.service](https://github.com/ribugent/dotfiles/blob/main/private_dot_config/systemd/user/jenv-refresh.service)
+
 ### Ssh
 
 Basic ssh configuration with known host and rendering work sensitive hosts from the secret store using a template.

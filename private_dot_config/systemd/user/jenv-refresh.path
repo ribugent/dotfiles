@@ -1,0 +1,9 @@
+[Unit]
+Description=Detects when installed jdk's change and triggers jenv to update
+
+[Path]
+PathChanged=/usr/lib/jvm
+Unit=jenv-refresh
+
+[Install]
+WantedBy=multi-user.target
