@@ -1,0 +1,22 @@
+# This script is intended for overwritting configuration files owned by other packages.
+post_install() {
+	_copy_files
+}
+
+post_upgrade() {
+	_copy_files
+}
+
+_copy_files() {
+	_copy_file "reflector.conf" "etc/xdg/reflector/reflector.conf"
+}
+
+_copy_file() {
+	local _SRC="usr/share/ribugent/$1"
+	local _DST=$2
+
+	if ! cmp --silent -- "$_SRC" "$_DST"; then
+		echo "Pacnew file created, please review it: $_DST.pacnew"
+		install -Dm0644 "$_SRC" "$_DST.pacnew"
+	fi
+}
