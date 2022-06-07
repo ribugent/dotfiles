@@ -16,6 +16,7 @@ replaces=()
 backup=(
 	"etc/docker/daemon.json"
 	"etc/sddm.conf.d/kde_settings.conf"
+	"etc/xdg/reflector/reflector.conf"
 )
 options=()
 install=
@@ -23,6 +24,7 @@ changelog=
 source=(
 	"docker-daemon.json"
 	"pacman-initramfs-permissions.hook"
+	"reflector.conf"
 	"sddm.conf"
 	"sddm-kde_settings.conf"
 	"sysctl-hardening.conf"
@@ -36,6 +38,7 @@ source=(
 noextract=()
 sha256sums=('de77a8cdc33cd14fb1a7fcf4730b320438929df33e307a575912304b7de84472'
             'cf37a77108f3c0f47f7d8058102e9ac3441772d78a11acbcdc89d6498f09b7cf'
+            '782168c49accf2a77b542615c0b4ea1b46d893a19b8c28fefda7eeaf7b95dc17'
             '1350a856288aea0d47d7d557fd849b0aa9f94a316b4695de178399070ce82789'
             '09ceb70aed411fdf708e3b236b5b945373a6895e9450b0f981a9ad2f34995d12'
             'f6f1a68247ad32db9257a5ca3d2c8fac771f03d6cda3cbb289354fe104f7ff4f'
@@ -52,6 +55,7 @@ package() {
 	install -Dm0644 sddm-kde_settings.conf "$pkgdir/etc/sddm.conf.d/kde_settings.conf"
 	install -Dm0644 sysctl-hardening.conf "$pkgdir/etc/sysctl.d/51-hardening.conf"
 	install -Dm0644 sysctl-swappiness.conf "$pkgdir/etc/sysctl.d/99-swappiness.conf"
+	install -Dm0644 reflector.conf "$pkgdir/etc/xdg/reflector/reflector.conf"
 	install -Dm0644 systemd-resolved-disable-default-dns.conf "$pkgdir/usr/lib/systemd/resolved.conf.d/disable-default-dns.conf"
 	install -Dm0644 systemd-resolved-dnssec.conf "$pkgdir/usr/lib/systemd/resolved.conf.d/dnssec.conf"
 	install -Dm0644 systemd-resolved-docker.conf "$pkgdir/usr/lib/systemd/resolved.conf.d/docker.conf"

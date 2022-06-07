@@ -65,6 +65,7 @@ Some drop in configuration system files are installed using `makepkg`:
     - Disable `kexec` syscall
     - Restrict pointers in proc filesystem
   - Set swappiness to 20
+- [Reflector](https://wiki.archlinux.org/title/reflector): Options for selecting the mirrors
 - Systemd resolved
   - Disables default DNS servers
   - Set DNSSEC with allow downgrade
