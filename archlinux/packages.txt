@@ -125,6 +125,7 @@ networkmanager-openvpn
 nfs-utils
 nodejs
 nodejs-serverless
+noisetorch
 nvm
 obsidian
 okular
