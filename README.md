@@ -30,15 +30,15 @@ All the files are managed using [chezmoi](https://www.chezmoi.io/), but the secr
 
     ```toml
     [data.git]
-    name = ...
+    name = <your name>
 
     [data.git.work]
-    email = ...
-    signkey = ...
+    email = <work email>
+    signkey = <work gpg sign key>
 
     [data.git.personal]
-    email = ...
-    signkey = ...
+    email = <personal email>
+    signkey = <personal gpg sign key>
     ```
 
 4. Finally apply
@@ -57,7 +57,7 @@ Some drop in configuration system files are installed using `makepkg`:
 
 - SDDM
   - Enable HiDPI in wayland
-  - Disable listening http connections in xorg
+  - Disable listening tcp connections in xorg
   - Plasma Desktop settings
 - Kernel parameters
   - Hardening
