@@ -51,7 +51,7 @@ All the files are managed using [chezmoi](https://www.chezmoi.io/), but the secr
 
 ### Arch Linux
 
-Installing automatically packages and optional package dependencies using [yay](https://github.com/Jguer/yay), the lists can be found in [\[1\]](https://github.com/ribugent/dotfiles/blob/main/archlinux/packages.txt) and [2](https://github.com/ribugent/dotfiles/blob/main/archlinux/packages-optional.txt).
+Installing automatically packages and optional package dependencies using [yay](https://github.com/Jguer/yay), the lists can be found in [\[1\]](https://github.com/ribugent/dotfiles/blob/main/archlinux/packages.txt) and [\[2\]](https://github.com/ribugent/dotfiles/blob/main/archlinux/packages-optional.txt).
 
 Some drop in configuration system files are installed using `makepkg`:
 
