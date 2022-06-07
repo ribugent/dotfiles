@@ -1,0 +1,4 @@
+#!/hint/sh
+
+# Based on /etc/pinentry/preexec
+test -e /usr/lib/libQt5Widgets.so.5 && exec /usr/bin/pinentry-qt     "$@"
