@@ -105,6 +105,10 @@ Currently I'm using [oh-my-fish](https://github.com/oh-my-fish/oh-my-fish). The 
 - Customize colours
 - `main` as a default branch on init
 
+# GnuPG
+
+Set `pinentry-qt` as the default pinentry program.
+
 ## Gradle
 
 Disable ram consuming gradle daemon... I have 16GB of RAM, but it's not enough sometimes.
