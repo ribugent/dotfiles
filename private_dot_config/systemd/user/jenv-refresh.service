@@ -3,7 +3,7 @@ Description=Refresh and update jenv java managed versions
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/bash -c 'sleep 10; JDKS=$(ls /usr/lib/jvm/ | egrep -v "(^default|openjfx)"); jenv refresh-versions; for JDK in $JDKS; do echo "Refreshing $jdk"; jenv add /usr/lib/jvm/$JDK; done'
+ExecStart=/usr/bin/bash -c 'sleep 10; JDKS=$(ls /usr/lib/jvm/ | egrep -v "(^default|openjfx)"); jenv refresh-versions; for JDK in $JDKS; do echo "Refreshing $JDK"; jenv add /usr/lib/jvm/$JDK; done'
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=default.target

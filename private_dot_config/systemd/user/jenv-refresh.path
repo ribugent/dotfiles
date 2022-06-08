@@ -6,4 +6,4 @@ PathChanged=/usr/lib/jvm
 Unit=jenv-refresh
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=default.target

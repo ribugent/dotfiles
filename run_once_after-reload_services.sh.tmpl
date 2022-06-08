@@ -1,0 +1,6 @@
+#!/bin/bash
+# Packages hash: {{ include "private_dot_config/systemd/user/jenv-refresh.path" | sha256sum }}
+# Packages hash: {{ include "private_dot_config/systemd/user/jenv-refresh.service" | sha256sum }}
+
+systemctl --user enable --now jenv-refresh.path
+systemctl --user daemon-reload
