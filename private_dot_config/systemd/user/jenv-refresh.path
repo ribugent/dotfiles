@@ -3,7 +3,7 @@ Description=Detects when installed jdk's change and triggers jenv to update
 
 [Path]
 PathChanged=/usr/lib/jvm
-Unit=jenv-refresh
+Unit=jenv-refresh.service
 
 [Install]
 WantedBy=default.target
