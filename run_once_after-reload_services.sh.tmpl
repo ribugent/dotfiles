@@ -1,6 +1,9 @@
 #!/bin/bash
 # Packages hash: {{ include "private_dot_config/systemd/user/jenv-refresh.path" | sha256sum }}
 # Packages hash: {{ include "private_dot_config/systemd/user/jenv-refresh.service" | sha256sum }}
+# Packages hash: {{ include "private_dot_config/systemd/user/noisetorch.service.tmpl" | sha256sum }}
 
 systemctl --user enable --now jenv-refresh.path
+systemctl --user enable --now noisetorch.service
+
 systemctl --user daemon-reload

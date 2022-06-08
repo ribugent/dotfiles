@@ -39,6 +39,10 @@ All the files are managed using [chezmoi](https://www.chezmoi.io/), but the secr
     [data.git.personal]
     email = <personal email>
     signkey = <personal gpg sign key>
+
+    [date.noisetorch]
+    device_unit = <microphone device unit>
+    device_name = <microphone device name>
     ```
 
 4. Finally apply
@@ -120,6 +124,10 @@ Automatically register and refresh jdk versions using systemd user units
 
 - [jenv-refresh.path](https://github.com/ribugent/dotfiles/blob/main/private_dot_config/systemd/user/jenv-refresh.path)
 - [jenv-refresh.service](https://github.com/ribugent/dotfiles/blob/main/private_dot_config/systemd/user/jenv-refresh.service)
+
+### Noisetorch
+
+Autoloading noisetorch when my microphone is plugged-in using [systemd user unit](https://github.com/ribugent/dotfiles/blob/main/private_dot_config/systemd/user/noisetorch.service.tmpl)
 
 ### Ssh
 
