@@ -2,18 +2,26 @@
         name = {{ .git.name }}
         email = {{ .git.work.email }}
         signingkey = {{ .git.work.signkey }}
-[push]
-        default = simple
-[pull]
-        rebase = merges
-[diff]
-        tool = meld
-        ff = false
-[mergetool]
-        prompt = false
+
 [commit]
         verbose = true
         gpgsign = true
+
+[init]
+	defaultBranch = main
+
+[push]
+        default = simple
+
+[pull]
+        rebase = merges
+
+[diff]
+        tool = meld
+        ff = false
+
+[mergetool]
+        prompt = false
 
 [url "https://github.com"]
 	insteadOf = git://github.com
@@ -27,11 +35,31 @@
 [includeIf "gitdir:.local/share/chezmoi/"]
 	path = ~/.gitconfig-ribugent.inc
 
-[init]
-	defaultBranch = main
-
 [color "status"]
 	added = green bold
 #	changed = red bold strike
 	untracked = cyan
 	branch = yellow black bold ul
+
+# Git-delta config
+[core]
+    pager = delta
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true
+    light = false
+    side-by-side = true
+    line-numbers = true
+    features = themes
+
+[delta "themes"]
+    syntax-theme = OneHalfDark
+
+[merge]
+    conflictstyle = diff3
+
+[diff]
+    colorMoved = default

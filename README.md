@@ -104,6 +104,7 @@ Currently I'm using [oh-my-fish](https://github.com/oh-my-fish/oh-my-fish). The 
 - Customize diff tool
 - Customize colours
 - `main` as a default branch on init
+- Use [gitdelta](https://github.com/dandavison/delta) as (terminal) diff viewer
 
 ### GnuPG
 

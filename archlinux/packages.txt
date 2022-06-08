@@ -13,6 +13,7 @@ automake
 autopep8
 aws-cli-v2-bin
 aws-sam-cli-bin
+bat
 base
 binutils
 bluedevil
@@ -52,6 +53,7 @@ gcc7
 gd
 gimp
 git
+git-delta
 git-standup-git
 github-cli
 google-chrome
