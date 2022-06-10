@@ -1,0 +1,19 @@
+[Desktop Entry]
+DefaultProfile=Perfil.profile
+
+[Dialogs]
+FirstRun=false
+
+[Favorite Profiles]
+Favorites=
+
+[KFileDialog Settings]
+detailViewIconSize=16
+
+[Open-with settings]
+CompletionMode=1
+History=fire,fir
+
+[Window]
+Height=90
+ShowSystrayIcon=false
