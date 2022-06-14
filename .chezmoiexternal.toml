@@ -1,4 +1,5 @@
 ["local/spark-3.2.1-bin-hadoop2.7"]
 type="archive"
 url="https://dlcdn.apache.org/spark/spark-3.2.1/spark-3.2.1-bin-hadoop2.7.tgz"
+stripComponents=1
 exact=false
