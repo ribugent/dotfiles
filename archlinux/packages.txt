@@ -45,6 +45,7 @@ firefox
 firefox-developer-edition
 firefox-developer-edition-i18n-ca
 firefox-i18n-ca
+firewalld
 fish
 flex
 fwupd
@@ -153,6 +154,7 @@ pkgconf
 plasma-browser-integration
 plasma-desktop
 plasma-disks
+plasma-firewall
 plasma-nm
 plasma-pa
 plasma-thunderbolt

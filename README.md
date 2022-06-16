@@ -76,6 +76,10 @@ Some drop in configuration system files are installed using `makepkg`:
   - Enable stub listener to be integrated with Docker (this solve issues DNS resolutions with custom domains on VPN connections)
 - xorg: Enforce 1080p resolution on my Dell XPS 13 laptop with 4k screen
 
+### Firewalld
+
+Enable the firewalld by default, and [integrate the docker interface](https://docs.docker.com/network/iptables/#integration-with-firewalld) the specified zone.
+
 ### Fish
 
 Drop-in files for `$PATH` management:
@@ -98,6 +102,7 @@ Currently I'm using [oh-my-fish](https://github.com/oh-my-fish/oh-my-fish). The 
 - Installs it automatically
 - Trigger install when the packages list is updated
 - Sets my favourite theme
+
 
 ### Git
 
