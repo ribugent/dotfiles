@@ -1,6 +1,6 @@
 # Maintainer: Gerard Ribugent <ribugent <at >ribugent <dot> com>
 pkgname=ribugent-arch-config
-pkgver=2022.06.07
+pkgver=2022.06.17
 pkgrel=1
 pkgdesc="Drop in configuration files for my Arch Linux installation"
 arch=("any")
@@ -26,6 +26,7 @@ source=(
 	"reflector.conf"
 	"sddm.conf"
 	"sddm-kde_settings.conf"
+	"security-faillock.conf"
 	"sysctl-hardening.conf"
 	"sysctl-swappiness.conf"
 	"systemd-resolved-disable-default-dns.conf"
@@ -40,6 +41,7 @@ sha256sums=('de77a8cdc33cd14fb1a7fcf4730b320438929df33e307a575912304b7de84472'
             '782168c49accf2a77b542615c0b4ea1b46d893a19b8c28fefda7eeaf7b95dc17'
             '1350a856288aea0d47d7d557fd849b0aa9f94a316b4695de178399070ce82789'
             '09ceb70aed411fdf708e3b236b5b945373a6895e9450b0f981a9ad2f34995d12'
+            'fa8b628ed59e629b1de62344b43fda144e24cc2835fc4c3060df60d293acca33'
             'f6f1a68247ad32db9257a5ca3d2c8fac771f03d6cda3cbb289354fe104f7ff4f'
             '3125626a344ffd183491164256ecd96aab5e5adc36dbb25aecceb9c545a0c816'
             'a98a4af95a457d692f0fee70afadde0f83940bc083b2e3dc21fc0b57317a441c'
@@ -60,4 +62,5 @@ package() {
 	install -Dm0644 xorg-monitor.conf "$pkgdir/etc/X11/xorg.conf.d/monitor.conf"
 
 	install -Dm0644 reflector.conf "$pkgdir/usr/share/ribugent/reflector.conf"
+	install -Dm0644 security-faillock.conf "$pkgdir/usr/share/ribugent/security-faillock.conf"
 }

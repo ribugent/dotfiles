@@ -70,6 +70,7 @@ Some drop in configuration system files are installed using `makepkg`:
     - Restrict pointers in proc filesystem
   - Set swappiness to 20
 - [Reflector](https://wiki.archlinux.org/title/reflector): Options for selecting the mirrors
+- Faillock: block accounts after 5 consecutive authentication failures
 - Systemd resolved
   - Disables default DNS servers
   - Set DNSSEC with allow downgrade

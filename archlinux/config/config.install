@@ -9,6 +9,7 @@ post_upgrade() {
 
 _copy_files() {
 	_copy_file "reflector.conf" "etc/xdg/reflector/reflector.conf"
+	_copy_file "security-faillock.conf" "etc/security/faillock.conf"
 }
 
 _copy_file() {
