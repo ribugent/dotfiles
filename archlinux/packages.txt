@@ -13,8 +13,8 @@ automake
 autopep8
 aws-cli-v2-bin
 aws-sam-cli-bin
-bat
 base
+bat
 binutils
 bluedevil
 breeze-gtk
@@ -55,6 +55,7 @@ gd
 gimp
 git
 git-delta
+git-interactive-rebase-tool
 git-standup-git
 github-cli
 google-chrome
@@ -80,6 +81,7 @@ intel-gpu-tools
 intel-ucode
 intellij-idea-community-edition
 jdk-openjdk
+jdk17-openjdk
 jdk8-openjdk
 jenv
 joplin-appimage
@@ -149,6 +151,7 @@ pass
 patch
 pavucontrol
 perl-build
+pip2pkgbuild
 pipewire-pulse
 pkgconf
 plasma-browser-integration
@@ -170,6 +173,7 @@ powertop
 print-manager
 pycharm-community-edition
 pyenv
+python-databricks-cli
 python-pip
 python-virtualenv
 qemu-user-static-bin

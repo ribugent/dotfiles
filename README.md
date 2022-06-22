@@ -115,6 +115,7 @@ Currently I'm using [oh-my-fish](https://github.com/oh-my-fish/oh-my-fish). The 
 - Customize colours
 - `main` as a default branch on init
 - Use [gitdelta](https://github.com/dandavison/delta) as (terminal) diff viewer
+- Use [git-interactive-rebase-tool](https://github.com/MitMaro/git-interactive-rebase-tool) as interactive rebase tool
 
 ### GnuPG
 
