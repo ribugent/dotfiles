@@ -141,7 +141,7 @@ Autoloading noisetorch when my microphone is plugged-in using [systemd user unit
 
 ### Ssh
 
-Basic ssh configuration with known host and rendering work sensitive hosts from the secret store using a template.
+Basic ssh configuration with known hosts and rendering work sensitive hosts from the secret store using a [template](https://github.com/ribugent/dotfiles/blob/main/.chezmoitemplates/ssh_config_host).
 
 ### Yay (Arch Linux only)
 
