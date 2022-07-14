@@ -94,9 +94,12 @@ Drop-in files for `$PATH` management:
 Set some default env variables in order to:
 
 - Disable ugly GTK+ options
-- Enforce GTK+ app to use Plasma Desktop file dialogs
+- Enforce GTK+ apps to use Plasma Desktop file dialogs
 - Default(terminal) editor to `vim`
 - Set `$BROWSER` to use `xdg-open`
+- Aliases
+  - `cat` for `bat -pp`
+  - `cz` for `chezmoi`
 
 Currently I'm using [oh-my-fish](https://github.com/oh-my-fish/oh-my-fish). The repo includes:
 
