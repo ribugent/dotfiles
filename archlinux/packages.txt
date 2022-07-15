@@ -21,6 +21,7 @@ breeze-gtk
 btop
 cfs-zen-tweaks
 chezmoi
+clamav
 cpanminus
 ctags
 cups
