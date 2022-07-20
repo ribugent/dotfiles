@@ -150,6 +150,11 @@ Autoloading noisetorch when my microphone is plugged-in using [systemd user unit
 
 Basic ssh configuration with known hosts and rendering work sensitive hosts from the secret store using a [template](https://github.com/ribugent/dotfiles/blob/main/.chezmoitemplates/ssh_config_host).
 
+### Touchegg
+
+- Modifify the config to get `pinch` working in Firefox Developer Edition too
+- Setup launching the services
+
 ### Yay (Arch Linux only)
 
 Setups system java, perl and python versions to avoid issues when building packages.

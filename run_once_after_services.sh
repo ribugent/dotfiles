@@ -14,3 +14,7 @@ if [ ! -e /var/lib/clamav/daily.cvd ]; then
 	sudo systemctl enable --now clamav-freshclam
 	sudo systemctl enable --now clamav-daemon
 fi
+
+if [ $(systemctl is-enable touchegg) != 'enabled' ]; then
+	sudo systemctl enable --now touchegg
+fi
