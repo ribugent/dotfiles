@@ -77,7 +77,7 @@ Some drop in configuration system files are installed using `makepkg`:
   - Enable stub listener to be integrated with Docker (this solve issues DNS resolutions with custom domains on VPN connections)
 - xorg: Enforce 1080p resolution on my Dell XPS 13 laptop with 4k screen
 
-# ClamAV
+### ClamAV
 
 - Installs ClamAV
 - Enables update signatures services
