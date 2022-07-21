@@ -1,6 +1,6 @@
 # Maintainer: Gerard Ribugent <ribugent <at >ribugent <dot> com>
 pkgname=ribugent-arch-config
-pkgver=2022.07.18
+pkgver=2022.07.21
 pkgrel=1
 pkgdesc="Drop in configuration files for my Arch Linux installation"
 arch=("any")
@@ -45,7 +45,7 @@ sha256sums=('f0dfbb551261100c52624e836077be0155ea3d67c8c0c913ce2d4b3991348d72'
             '09ceb70aed411fdf708e3b236b5b945373a6895e9450b0f981a9ad2f34995d12'
             'fa8b628ed59e629b1de62344b43fda144e24cc2835fc4c3060df60d293acca33'
             'f6f1a68247ad32db9257a5ca3d2c8fac771f03d6cda3cbb289354fe104f7ff4f'
-            '3125626a344ffd183491164256ecd96aab5e5adc36dbb25aecceb9c545a0c816'
+            'a8d14e69da37642e072c044f9a930511342a02f70493225f02cc5c8ba297be4b'
             'a98a4af95a457d692f0fee70afadde0f83940bc083b2e3dc21fc0b57317a441c'
             '9353bdf12a9d7dab858c97372afffd8c4364be0061515d473aff8da12f6f2b47'
             '45e21be33e074d7a82a959d73808414cbee46408263dbfa3d748f603f0fe33d6'
