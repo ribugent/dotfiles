@@ -1,0 +1,7 @@
+[Desktop Entry]
+Exec=/usr/bin/touchegg
+Icon=dialog-scripts
+Name=touchegg
+Path=
+Type=Application
+X-KDE-AutostartScript=true
