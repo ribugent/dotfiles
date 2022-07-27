@@ -9,12 +9,12 @@ if [ ! -e /etc/firewalld/zones/docker.xml ]; then
 fi
 
 
-if [ ! -e /var/lib/clamav/daily.cvd ]; then
+if [ ! -e /var/lib/clamav/daily.cld ]; then
 	sudo freshclam
 	sudo systemctl enable --now clamav-freshclam
 	sudo systemctl enable --now clamav-daemon
 fi
 
-if [ $(systemctl is-enable touchegg) != 'enabled' ]; then
+if [ $(systemctl is-enabled touchegg) != 'enabled' ]; then
 	sudo systemctl enable --now touchegg
 fi
