@@ -104,6 +104,7 @@ Set some default env variables in order to:
 - Enforce GTK+ apps to use Plasma Desktop file dialogs
 - Default(terminal) editor to `vim`
 - Set `$BROWSER` to use `xdg-open`
+- Enable colors on man pages
 - Aliases
   - `cat` for `bat -pp`
   - `cz` for `chezmoi`
