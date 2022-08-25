@@ -113,7 +113,7 @@ Currently I'm using [oh-my-fish](https://github.com/oh-my-fish/oh-my-fish). The 
 
 - Installs it automatically
 - Trigger install when the packages list is updated
-- Sets my favourite theme
+- Sets my favorite theme
 
 
 ### Git
