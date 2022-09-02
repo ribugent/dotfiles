@@ -1,0 +1,9 @@
+[staging]
+host = {{ (passFields "databricks/staging").host }}
+token = {{ pass "databricks/staging" }}
+jobs-api-version = 2.1
+
+[prod]
+host = {{ (passFields "databricks/prod").host }}
+token = {{ pass "databricks/prod" }}
+jobs-api-version = 2.1
