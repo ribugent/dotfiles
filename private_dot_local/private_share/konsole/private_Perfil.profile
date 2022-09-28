@@ -1,6 +1,6 @@
 [Appearance]
 ColorScheme=Breeze
-Font=DroidSansMono Nerd Font Mono,10,-1,5,50,0,0,0,0,0
+Font=FiraCode Nerd Font Mono,10,-1,5,57,0,0,0,0,0,Medium
 LineSpacing=0
 UseFontLineChararacters=false
 
