@@ -8,6 +8,7 @@ libusb-compat
 libva-intel-driver
 noto-fonts-cjk
 noto-fonts-emoji
+qemu-user-static-binfmt
 qt5-xmlpatterns
 subversion
 tk
