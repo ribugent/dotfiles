@@ -1,0 +1,5 @@
+[default]
+output = json
+region = eu-west-1
+s3 =
+    max_concurrent_requests = 100
