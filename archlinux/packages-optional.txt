@@ -12,6 +12,5 @@ qemu-user-static-binfmt
 qt5-xmlpatterns
 subversion
 tk
-webkit2gtk
 xclip
 xorg-xhost
