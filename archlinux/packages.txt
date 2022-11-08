@@ -23,6 +23,7 @@ btop
 check-broken-packages-pacman-hook-git
 chezmoi
 clamav
+clamtk
 cpanminus
 ctags
 cups
@@ -70,6 +71,7 @@ grub
 grub-hook
 gwenview
 hadolint-bin
+hexyl
 hpuld
 htmldoc
 htop
@@ -92,6 +94,7 @@ kaccounts-providers
 kcalc
 kcolorchooser
 kde-gtk-config
+kde-servicemenus-clamtkscan
 kdeconnect
 kdeplasma-addons
 kdiff3
@@ -99,13 +102,13 @@ keepassxc
 keepassxc-wordlist-catalan
 kernel-modules-hook
 keybase
-kgpg
 kimageformats
 kinfocenter
 kipi-plugins
 kleopatra
 kscreen
 kwalletmanager
+lazydocker-bin
 leapp-bin
 libffi7
 libreoffice-fresh-ca
@@ -144,7 +147,6 @@ okular
 openssh
 openvpn
 openvpn-update-systemd-resolved
-openvpn3
 otf-cascadia-code
 oxygen
 p7zip
@@ -184,6 +186,7 @@ print-manager
 pycharm-community-edition
 pyenv
 python-databricks-cli
+python-datadog
 python-dbx
 python-parquet-tools
 python-pip
@@ -213,6 +216,7 @@ sudo
 systemd-kcm
 systemd-resolvconf
 teams
+terragrunt
 texinfo
 tfenv
 tig
