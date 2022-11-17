@@ -37,6 +37,7 @@ docker
 docker-compose
 dolphin
 dos2unix
+duf
 edk2-ovmf
 efibootmgr
 etc-update
@@ -132,7 +133,6 @@ mlocate
 namcap
 ncdu
 nerd-fonts-droid-sans-mono
-nerd-fonts-fira-code
 net-tools
 network-manager-applet
 networkmanager
@@ -223,6 +223,7 @@ tig
 torbrowser-launcher
 touchegg
 ttf-fira-code
+ttf-firacode-nerd
 ttf-ms-fonts
 unzip
 uptimed
