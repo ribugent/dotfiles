@@ -1,0 +1,24 @@
+[Desktop Entry]
+Categories=Network;Application;
+Comment[ca_ES]=Zoom Video Conference
+Comment=Zoom Video Conference
+Encoding=UTF-8
+Exec='XDG_CURRENT_DESKTOP=Gnome /usr/bin/zoom' %U
+GenericName[ca_ES]=
+GenericName=
+Icon=Zoom
+MimeType=application/x-zoom;
+Name[ca_ES]=Zoom
+Name=Zoom
+Name[en_US]=Zoom
+Path=
+StartupNotify=true
+StartupWMClass=zoom
+Terminal=false
+TerminalOptions=
+Type=Application
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-Protocols=zoommtg;zoomus;tel;callto;zoomphonecall;
+X-KDE-SubstituteUID=false
+X-KDE-Username=
