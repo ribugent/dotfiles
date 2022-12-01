@@ -12,7 +12,7 @@ asciinema
 autoconf
 automake
 autopep8
-aws-cli-v2-bin
+aws-cli-v2
 aws-sam-cli-bin
 base
 bat
@@ -34,6 +34,7 @@ discord
 discover
 dive-git
 docker
+docker-buildx
 docker-compose
 dolphin
 dos2unix
@@ -244,6 +245,7 @@ xdg-user-dirs
 xorg-xdpyinfo
 xorg-xev
 xorg-xinput
+xorg-xlsclients
 yakuake
 yarn
 yay
