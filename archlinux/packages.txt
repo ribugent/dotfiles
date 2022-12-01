@@ -140,6 +140,7 @@ networkmanager-openvpn
 nfs-utils
 nodejs
 nodejs-leapp-cli
+nohang
 noisetorch
 nvm
 obsidian
