@@ -1,4 +1,5 @@
 package aws
+package bass
 package config
 package foreign-env
 package grc
