@@ -6,6 +6,6 @@ set -x GTK_OVERLAY_SCROLLING 0
 set -x VIRTUAL_ENV_DISABLE_PROMPT 1
 set -x grc_plugin_ignore_execs df
 
-if [ "$XDG_SESSION_TYPE" == "wayland" ]; then
-    set -x MOZ_ENABLE_WAYLAND 1
-fi
+if test "$XDG_SESSION_TYPE" = "wayland"
+    echo yes
+end
