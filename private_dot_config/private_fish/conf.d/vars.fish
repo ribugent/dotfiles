@@ -7,5 +7,5 @@ set -x VIRTUAL_ENV_DISABLE_PROMPT 1
 set -x grc_plugin_ignore_execs df
 
 if test "$XDG_SESSION_TYPE" = "wayland"
-    echo yes
+    set -x MOZ_ENABLE_WAYLAND 1
 end
