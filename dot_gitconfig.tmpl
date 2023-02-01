@@ -30,14 +30,14 @@
 [url "https://github.com"]
 	insteadOf = git://github.com
 
-[includeIf "gitdir:~/Develop/*/.git"]
+[includeIf "hasconfig:remote.*.url:{{ .git.work.remotePrefix }}/**"]
         path = ~/.gitconfig-lm-hooks.inc
 
-[includeIf "gitdir:~/Develop/ribugent/"]
+[includeIf "hasconfig:remote.*.url:{{ .git.personal.remotePrefix }}/**"]
 	path = ~/.gitconfig-ribugent.inc
 
-[includeIf "gitdir:.local/share/chezmoi/"]
-	path = ~/.gitconfig-ribugent.inc
+[includeIf "hasconfig:remote.*.url:ssh://aur@aur.archlinux.org/**"]
+        path = ~/.gitconfig-ribugent.inc
 
 [color "status"]
 	added = green bold

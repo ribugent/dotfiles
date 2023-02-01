@@ -35,10 +35,12 @@ All the files are managed using [chezmoi](https://www.chezmoi.io/), but the secr
     [data.git.work]
     email = <work email>
     signkey = <work gpg sign key>
+    remotePrefix = <work git remote prefix>
 
     [data.git.personal]
     email = <personal email>
     signkey = <personal gpg sign key>
+    remotePrefix = <personal git remote prefix>
 
     [date.noisetorch]
     device_unit = <microphone device unit>
