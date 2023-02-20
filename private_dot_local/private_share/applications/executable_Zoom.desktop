@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Zoom
 Comment=Zoom Video Conference
-Exec=env XDG_CURRENT_DESKTOP=Gnome /usr/bin/zoom %U
+Exec=env XDG_CURRENT_DESKTOP=Gnome QT_QPA_PLATFORM="wayland;xcb" /usr/bin/zoom %U
 Icon=Zoom
 Terminal=false
 Type=Application
