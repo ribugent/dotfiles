@@ -16,4 +16,5 @@ History=fire,fir
 
 [Window]
 Height=90
+Screen=1
 ShowSystrayIcon=false
