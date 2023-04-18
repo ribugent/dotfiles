@@ -34,17 +34,17 @@ All the files are managed using [chezmoi](https://www.chezmoi.io/), but the secr
     args = ["--pager=never"]
 
     [data.git]
-    name = <your name>
+    name = "<your name>"
 
     [data.git.work]
-    email = <work email>
-    signkey = <work gpg sign key>
-    remotePrefix = <work git remote prefix>
+    email = "<work email>"
+    signkey = "<work gpg sign key>"
+    remotePrefix = "<work git remote prefix>"
 
     [data.git.personal]
-    email = <personal email>
-    signkey = <personal gpg sign key>
-    remotePrefix = <personal git remote prefix>
+    email = "<personal email>"
+    signkey = "<personal gpg sign key>"
+    remotePrefix = "<personal git remote prefix>"
 
     [date.noisetorch]
     device_unit = <microphone device unit>
