@@ -29,6 +29,10 @@ All the files are managed using [chezmoi](https://www.chezmoi.io/), but the secr
 3. Create `~/.config/chezmoi/chezmoi.toml` and fill it with the information
 
     ```toml
+    [diff]
+    command = "delta"
+    args = ["--pager=never"]
+
     [data.git]
     name = <your name>
 
