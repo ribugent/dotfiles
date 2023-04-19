@@ -1,5 +1,12 @@
 #!/bin/bash
 
+OS="{{ .chezmoi.os }}"
+DISTRO="{{ .chezmoi.osRelease.id }}"
+
+if [[ $OS -ne "linux" && $DISTRO -ne 'arch' ]]; then
+	exit 0
+fi;
+
 sudo systemctl enable --now firewalld
 
 if [ ! -e /etc/firewalld/zones/docker.xml ]; then
