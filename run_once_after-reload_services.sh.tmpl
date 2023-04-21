@@ -4,6 +4,6 @@
 # Packages hash: {{ include "private_dot_config/systemd/user/noisetorch.service.tmpl" | sha256sum }}
 
 systemctl --user enable --now jenv-refresh.path
-systemctl --user enable --now noisetorch.service
+systemctl --user enable noisetorch.service
 
 systemctl --user daemon-reload
