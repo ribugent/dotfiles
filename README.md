@@ -13,7 +13,7 @@ All the files are managed using [chezmoi](https://www.chezmoi.io/), but the secr
 - [gnupg](https://gnupg.org/)
 - [git](https://git-scm.com/)
 - [yay](https://github.com/Jguer/yay) (Arch Linux only)
-- base-devel[\[1\]](https://archlinux.org/groups/x86_64/base-devel/)[\[2\]](https://archlinux.org/groups/any/base-devel/) packages (Arch Linux only)
+- [base-devel](https://archlinux.org/packages/core/any/base-devel/)
 - My gpg keys 🙈
 
 ## Bootstrapping
@@ -63,10 +63,10 @@ All the files are managed using [chezmoi](https://www.chezmoi.io/), but the secr
 
 Installing automatically packages and optional package dependencies using [yay](https://github.com/Jguer/yay), the lists can be found in [\[1\]](https://github.com/ribugent/dotfiles/blob/main/archlinux/packages.txt) and [\[2\]](https://github.com/ribugent/dotfiles/blob/main/archlinux/packages-optional.txt).
 
-Some drop in configuration system files are installed using `makepkg`:
+Some drop-in configuration system files are installed using `makepkg`:
 
 - SDDM
-  - Enable HiDPI in wayland
+  - Enable HiDPI in Wayland
   - Disable listening tcp connections in xorg
   - Plasma Desktop settings
 - Kernel parameters
@@ -79,7 +79,6 @@ Some drop in configuration system files are installed using `makepkg`:
 - Faillock: block accounts after 5 consecutive authentication failures
 - Systemd resolved
   - Disables default DNS servers
-  - Set DNSSEC with allow downgrade
   - Enable stub listener to be integrated with Docker (this solve issues DNS resolutions with custom domains on VPN connections)
 - xorg: Enforce 1080p resolution on my Dell XPS 13 laptop with 4k screen
 
@@ -92,7 +91,7 @@ Some drop in configuration system files are installed using `makepkg`:
 
 ### Firewalld
 
-Enable the firewalld by default, and [integrate the docker interface](https://docs.docker.com/network/iptables/#integration-with-firewalld) the specified zone.
+Enable the firewalld by default, and [integrate the docker interface](https://docs.docker.com/network/iptables/#integration-with-firewalld) to the specified zone.
 
 ### Fish
 
@@ -112,10 +111,11 @@ Set some default env variables in order to:
 - Set `$BROWSER` to use `xdg-open`
 - Enable colors on man pages
 - Aliases
-  - `cat` for `bat -pp`
+  - `cat` for [`bat -pp`](https://github.com/sharkdp/bat)
   - `cz` for `chezmoi`
+  - `df` for [`duf`](https://github.com/muesli/duf)
 
-Currently I'm using [oh-my-fish](https://github.com/oh-my-fish/oh-my-fish). The repo includes:
+Currently, I'm using [oh-my-fish](https://github.com/oh-my-fish/oh-my-fish). The repo includes:
 
 - Installs it automatically
 - Trigger install when the packages list is updated
