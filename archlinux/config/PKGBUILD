@@ -1,6 +1,6 @@
 # Maintainer: Gerard Ribugent <ribugent <at >ribugent <dot> com>
 pkgname=ribugent-arch-config
-pkgver=2023.04.24
+pkgver=2023.05.23
 pkgrel=1
 pkgdesc="Drop in configuration files for my Arch Linux installation"
 arch=("any")
@@ -29,6 +29,7 @@ source=(
 	"sddm.conf"
 	"sddm-kde_settings.conf"
 	"security-faillock.conf"
+	"sudoers-secure_path.conf"
 	"sysctl-elasticsearch.conf"
 	"sysctl-hardening.conf"
 	"sysctl-swappiness.conf"
@@ -46,6 +47,7 @@ sha256sums=('f0dfbb551261100c52624e836077be0155ea3d67c8c0c913ce2d4b3991348d72'
             '1350a856288aea0d47d7d557fd849b0aa9f94a316b4695de178399070ce82789'
             '09ceb70aed411fdf708e3b236b5b945373a6895e9450b0f981a9ad2f34995d12'
             'fa8b628ed59e629b1de62344b43fda144e24cc2835fc4c3060df60d293acca33'
+            '1d2d7c4fa9ee961c3381602059377e13b34878dafdd2707e003d3a2f3f8cbf22'
             'ff9684a7f9e9e274e3615b43c5b0da071f8fe58ba7411588e2abc91b18d7adbf'
             'f6f1a68247ad32db9257a5ca3d2c8fac771f03d6cda3cbb289354fe104f7ff4f'
             'a8d14e69da37642e072c044f9a930511342a02f70493225f02cc5c8ba297be4b'
@@ -59,6 +61,7 @@ package() {
 	install -Dm0644 pacman-initramfs-permissions.hook "$pkgdir/usr/share/libalpm/hooks/91-initramfs-permissions.hook"
 	install -Dm0644 sddm.conf "$pkgdir/etc/sddm.conf.d/hidpi.conf"
 	install -Dm0644 sddm-kde_settings.conf "$pkgdir/etc/sddm.conf.d/kde_settings.conf"
+	install -Dm0644 sudoers-secure_path.conf "$pkgdir/etc/sudoers.d/10-secure-path"
 	install -Dm0644 sysctl-hardening.conf "$pkgdir/etc/sysctl.d/51-hardening.conf"
 	install -Dm0644 sysctl-elasticsearch.conf "$pkgdir/etc/sysctl.d/52-elasticsearch.conf"
 	install -Dm0644 sysctl-swappiness.conf "$pkgdir/etc/sysctl.d/99-swappiness.conf"
