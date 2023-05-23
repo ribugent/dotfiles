@@ -15,6 +15,7 @@ autopep8
 aws-cli-v2
 aws-sam-cli-bin
 base
+base-devel
 bat
 binutils
 bluedevil
@@ -26,6 +27,7 @@ clamav
 clamtk
 cpanminus
 ctags
+ctop
 cups
 dbeaver
 dell-command-configure
@@ -43,6 +45,7 @@ edk2-ovmf
 efibootmgr
 etc-update
 etckeeper
+exfatprogs
 fakeroot
 fd
 firefox
@@ -83,6 +86,7 @@ hunspell-es_es
 hw-probe
 hwinfo
 informant
+insomnia-bin
 intel-gpu-tools
 intel-ucode
 intellij-idea-community-edition
@@ -127,13 +131,12 @@ make
 man-db
 mariadb-clients
 mariadb-libs
-marp-cli
+marp-cli-bin
 maven
 meld
 mlocate
 namcap
 ncdu
-nerd-fonts-droid-sans-mono
 net-tools
 network-manager-applet
 networkmanager
@@ -146,10 +149,12 @@ noisetorch
 nvm
 obsidian
 okular
+onefetch
 openssh
 openvpn
 openvpn-update-systemd-resolved
 otf-cascadia-code
+otf-droid-nerd
 oxygen
 p7zip
 packagekit-qt5
@@ -160,12 +165,12 @@ pacutils
 paleofetch-git
 parquet-cli
 parquet-tools
+partitionmanager
 pass
 patch
 pavucontrol
 peek
 perl-build
-pip2pkgbuild
 pipewire-pulse
 pkgconf
 plasma-browser-integration
@@ -190,6 +195,7 @@ pyenv
 python-databricks-cli
 python-datadog
 python-dbx
+python-git-sim
 python-parquet-tools
 python-pip
 python-virtualenv
@@ -207,8 +213,9 @@ screen
 sddm
 sddm-kcm
 seahorse
+secureframe-agent
 skanlite
-slack-desktop
+slack-electron
 spectacle
 spotify
 sshfs
@@ -221,6 +228,8 @@ teams
 terragrunt
 texinfo
 tfenv
+thunderbird-beta-bin
+thunderbird-beta-i18n-ca
 tig
 torbrowser-launcher
 touchegg
