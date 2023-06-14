@@ -3,6 +3,7 @@ colord
 gnome-keyring
 gvfs
 icu69
+libmediawiki-git
 libmicrohttpd
 libusb-compat
 libva-intel-driver
