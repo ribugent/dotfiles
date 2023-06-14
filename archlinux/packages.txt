@@ -25,12 +25,14 @@ check-broken-packages-pacman-hook-git
 chezmoi
 clamav
 clamtk
+cmake
 cpanminus
 ctags
 ctop
 cups
 dbeaver
 dell-command-configure
+deno
 direnv
 discord
 discover
@@ -215,7 +217,7 @@ sddm-kcm
 seahorse
 secureframe-agent
 skanlite
-slack-electron
+slack-desktop
 spectacle
 spotify
 sshfs
@@ -224,6 +226,7 @@ start-stop-daemon
 sudo
 systemd-kcm
 systemd-resolvconf
+systemdgenie
 teams
 terragrunt
 texinfo
