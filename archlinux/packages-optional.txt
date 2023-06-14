@@ -1,7 +1,10 @@
 aribb24
 colord
 gnome-keyring
+dosfstools
+graphviz
 gvfs
+ibus
 icu69
 libmediawiki-git
 libmicrohttpd
@@ -9,9 +12,11 @@ libusb-compat
 libva-intel-driver
 noto-fonts-cjk
 noto-fonts-emoji
+python-systemd
 qemu-user-static-binfmt
 qt5-xmlpatterns
 subversion
 tk
+ttf-nerd-fonts-symbols-mono
 xclip
 xorg-xhost
