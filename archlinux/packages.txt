@@ -27,6 +27,7 @@ clamav
 clamtk
 cmake
 cpanminus
+cpupower-gui
 ctags
 ctop
 cups
@@ -87,6 +88,7 @@ hunspell-en_gb
 hunspell-es_es
 hw-probe
 hwinfo
+imgcat
 informant
 insomnia-bin
 intel-gpu-tools
@@ -148,6 +150,7 @@ nodejs
 nodejs-leapp-cli
 nohang
 noisetorch
+notes
 nvm
 obsidian
 okular
@@ -231,8 +234,8 @@ teams
 terragrunt
 texinfo
 tfenv
-thunderbird-beta-bin
-thunderbird-beta-i18n-ca
+thunderbird
+thunderbird-i18n-ca
 tig
 torbrowser-launcher
 touchegg
@@ -241,6 +244,7 @@ ttf-firacode-nerd
 ttf-ms-fonts
 unzip
 uptimed
+usb_modeswitch
 usbguard
 usbguard-applet-qt
 usbutils
