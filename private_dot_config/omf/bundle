@@ -2,6 +2,7 @@ package aws
 package bass
 package config
 package foreign-env
+package git@github.com:PatrickF1/fzf.fish.git
 package grc
 package https://github.com/ribugent/plugin-nvm
 package spark
