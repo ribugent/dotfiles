@@ -59,6 +59,7 @@ firewalld
 fish
 flex
 fwupd
+fzf
 gcc
 gcc7
 gd
@@ -264,6 +265,7 @@ xorg-xdpyinfo
 xorg-xev
 xorg-xinput
 xorg-xlsclients
+xwaylandvideobridge-bin
 yakuake
 yarn
 yay
