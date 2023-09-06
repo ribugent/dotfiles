@@ -148,10 +148,12 @@ networkmanager-openvpn
 nfs-utils
 nodejs
 nodejs-leapp-cli
+nodenv
+nodenv-node-build
+nodenv-nvmrc
 nohang
 noisetorch
 notes
-nvm
 obsidian
 okular
 onefetch

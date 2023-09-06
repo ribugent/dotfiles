@@ -1,0 +1,1 @@
+source (nodenv init -|psub)
