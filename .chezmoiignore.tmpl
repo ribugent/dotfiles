@@ -5,6 +5,6 @@ README.md
 
 # Exclusive arch files
 {{- if ne .chezmoi.osRelease.id "archarm" }}
-.config/systemd/user/noisetorch.service
+.config/systemd/user/noisetorch.service.tmpl
 .config/USBGuard
 {{- end }}
