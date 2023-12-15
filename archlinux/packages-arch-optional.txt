@@ -6,7 +6,6 @@ graphviz
 gvfs
 ibus
 icu69
-libmediawiki-git
 libmicrohttpd
 libusb-compat
 libva-intel-driver
