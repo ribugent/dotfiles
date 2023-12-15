@@ -31,17 +31,15 @@ ctop
 cups
 databricks-cli-bin
 dbeaver
-deno
 direnv
 discover
-dive-git
+dive
 docker
 docker-buildx
 docker-compose
 dolphin
 dos2unix
 duf
-edk2-ovmf
 efibootmgr
 etc-update
 etckeeper
@@ -78,10 +76,8 @@ htop
 hunspell-ca
 hunspell-en_gb
 hunspell-es_es
-hw-probe
 imgcat
 informant
-intellij-idea-community-edition
 jdk-openjdk
 jdk17-openjdk
 jdk8-openjdk
@@ -106,12 +102,11 @@ kleopatra
 kscreen
 kwalletmanager
 lazydocker-bin
-leapp-bin
 libffi7
 libredefender
 libreoffice-fresh-ca
 libxcrypt-compat
-linux-aarch84
+linux-aarch64
 linux-firmware
 maestral
 maestral-qt
@@ -152,7 +147,6 @@ pacman-log-orphans-hook
 pacutils
 paleofetch-git
 parquet-cli
-parquet-tools
 partitionmanager
 pass
 patch
@@ -170,7 +164,6 @@ plasma-pa
 plasma-thunderbolt
 plasma-wayland-session
 plasma-workspace-wallpapers
-plasma5-applets-plasma-pstate
 plenv
 postman-bin
 power-profiles-daemon
@@ -178,7 +171,6 @@ powerdevil
 powerline-fonts
 powertop
 print-manager
-pycharm-community-edition
 pyenv
 python-datadog
 python-git-sim

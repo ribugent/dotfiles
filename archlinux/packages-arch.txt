@@ -38,7 +38,7 @@ deno
 direnv
 discord
 discover
-dive-git
+dive
 docker
 docker-buildx
 docker-compose

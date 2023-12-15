@@ -10,7 +10,6 @@ libusb-compat
 noto-fonts-cjk
 noto-fonts-emoji
 python-systemd
-qemu-user-static-binfmt
 qt5-xmlpatterns
 subversion
 tk
