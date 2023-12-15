@@ -31,6 +31,7 @@ cpupower-gui
 ctags
 ctop
 cups
+databricks-cli-bin
 dbeaver
 dell-command-configure
 deno
@@ -66,7 +67,7 @@ gd
 gimp
 git
 git-delta
-git-interactive-rebase-tool
+git-interactive-rebase-tool-bin
 git-standup-git
 github-cli
 google-chrome
@@ -105,7 +106,6 @@ kaccounts-providers
 kcalc
 kcolorchooser
 kde-gtk-config
-kde-servicemenus-clamtkscan
 kdeconnect
 kdeplasma-addons
 kdiff3
@@ -113,15 +113,16 @@ keepassxc
 keepassxc-wordlist-catalan
 kernel-modules-hook
 keybase
-kimageformats
+kf5-servicemenus-clamtkscan
+kimageformats5
 kinfocenter
-kipi-plugins
 kleopatra
 kscreen
 kwalletmanager
 lazydocker-bin
 leapp-bin
 libffi7
+libredefender
 libreoffice-fresh-ca
 libxcrypt-compat
 linux
@@ -139,6 +140,7 @@ mariadb-libs
 marp-cli-bin
 maven
 meld
+minikube
 mlocate
 namcap
 ncdu
@@ -200,9 +202,7 @@ powertop
 print-manager
 pycharm-community-edition
 pyenv
-python-databricks-cli
 python-datadog
-python-dbx
 python-git-sim
 python-parquet-tools
 python-pip
@@ -214,14 +214,12 @@ realtime-privileges
 redis
 reflector
 reflector-mirrorlist-update
-ribugent-arch-config
 rsync
 sbctl
 screen
 sddm
 sddm-kcm
 seahorse
-secureframe-agent
 skanlite
 slack-desktop
 spectacle
@@ -241,7 +239,6 @@ thunderbird
 thunderbird-i18n-ca
 tig
 torbrowser-launcher
-touchegg
 ttf-fira-code
 ttf-firacode-nerd
 ttf-ms-fonts
