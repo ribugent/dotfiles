@@ -5,7 +5,6 @@ dosfstools
 graphviz
 gvfs
 ibus
-icu69
 libmicrohttpd
 libusb-compat
 noto-fonts-cjk
