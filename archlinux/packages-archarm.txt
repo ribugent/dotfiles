@@ -5,7 +5,6 @@ amazon-corretto-11
 amazon-ecr-credential-helper
 apache-tools
 apparmor
-aqemu
 archlinux-contrib
 ark
 asciinema
