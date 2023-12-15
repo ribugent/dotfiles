@@ -80,7 +80,6 @@ hunspell-ca
 hunspell-en_gb
 hunspell-es_es
 hw-probe
-hwinfo
 imgcat
 informant
 intellij-idea-community-edition
@@ -187,7 +186,6 @@ python-git-sim
 python-parquet-tools
 python-pip
 python-virtualenv
-qemu-user-static
 qt5-imageformats
 qtpass
 realtime-privileges
