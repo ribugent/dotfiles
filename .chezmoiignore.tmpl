@@ -4,7 +4,7 @@ LICENSE
 README.md
 
 # Exclusive arch files
-{{- if ne .chezmoi.osRelease.id "archarm" }}
-.config/systemd/user/noisetorch.service.tmpl
+{{- if ne .chezmoi.osRelease.id "arch" }}
+.config/systemd/user/noisetorch.service
 .config/USBGuard
 {{- end }}
