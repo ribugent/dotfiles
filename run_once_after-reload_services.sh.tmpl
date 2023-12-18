@@ -5,6 +5,8 @@
 set -euo pipefail
 
 systemctl --user enable --now jenv-refresh.path
-systemctl --user enable noisetorch.service
+if [[ -d ~/.config/systemd/user/noisetorch.service ]]; then
+	systemctl --user enable noisetorch.service
+fi
 
 systemctl --user daemon-reload
