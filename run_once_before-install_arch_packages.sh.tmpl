@@ -1,9 +1,9 @@
-#!//bin/bash
+#!/bin/bash
 # Packages hash: {{ include "archlinux/packages-arch.txt" | sha256sum }}
 # Packages hash: {{ include "archlinux/packages-archarm.txt" | sha256sum }}
 # Optional packages hash: {{ include "archlinux/packages-arch-optional.txt" | sha256sum }}
 # Optional packages hash: {{ include "archlinux/packages-archarm-optional.txt" | sha256sum }}
-
+set -euo pipefail
 
 function findMissing() {
 	local PACKAGES=$1
