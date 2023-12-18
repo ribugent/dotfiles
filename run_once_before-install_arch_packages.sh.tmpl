@@ -18,7 +18,7 @@ function findMissing() {
 OS="{{ .chezmoi.os }}"
 DISTRO="{{ .chezmoi.osRelease.id }}"
 
-if [[ $OS -ne "linux" && $DISTRO -ne 'arch' && $DISTRO -ne 'archarm' ]]; then
+if [[ $OS != "linux" && $DISTRO != 'arch' && $DISTRO != 'archarm' ]]; then
 	exit 0
 fi;
 
