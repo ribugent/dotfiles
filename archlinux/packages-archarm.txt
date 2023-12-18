@@ -53,7 +53,6 @@ fish
 flex
 fzf
 gcc
-gcc7
 gd
 gimp
 git
