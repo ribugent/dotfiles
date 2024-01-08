@@ -30,7 +30,6 @@ ctags
 ctop
 cups
 databricks-cli-bin
-dbeaver-arm
 direnv
 discover
 dive
@@ -120,7 +119,6 @@ networkmanager
 networkmanager-openvpn
 nfs-utils
 nodejs
-nodejs-graphite-cli
 nodenv
 nodenv-node-build
 nodenv-nvmrc
@@ -184,13 +182,11 @@ slack-electron
 spectacle
 sshfs
 starship
-start-stop-daemon
 sudo
 systemd-kcm
 systemd-resolvconf
 systemdgenie
 texinfo
-tfenv
 thunderbird
 thunderbird-i18n-ca
 tig
