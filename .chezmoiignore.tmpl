@@ -5,6 +5,30 @@ README.md
 
 # Exclusive arch files
 {{- if ne .chezmoi.osRelease.id "arch" }}
+.cache/yay/
+
 .config/systemd/user/noisetorch.service
 .config/USBGuard
+{{- end }}
+
+# Exclusive linux files
+{{- if ne .chezmoi.os "linux" }}
+.kde4/
+
+.config/autostart/
+.config/fontconfig/
+.config/pinentry/preexec
+.config/systemd/
+.config/touchegg/
+.config/USBGuard/
+.config/yay/
+
+.config/electron-flags.conf
+.config/baloofilerc
+.config/konsolerc
+.config/yakuakerc
+
+.gnupg/
+
+.local/
 {{- end }}
