@@ -1,0 +1,16 @@
+{
+	"auths": {
+		"ghcr.io": {
+			"auth": "{{ pass "docker/githubRegistry" }}"
+		},
+		"https://index.docker.io/v1/": {
+			"auth": "{{ pass "docker/dockerRegistry" }}"
+		}
+	},
+	"credHelpers": {
+		"{{ pass "aws/accountId" }}.dkr.ecr.{{ pass "aws/region" }}.amazonaws.com": "ecr-login"
+	},
+	"aliases": {
+		"builder": "buildx"
+	}
+}
