@@ -4,17 +4,16 @@ macos
 LICENSE
 README.md
 
-# Exclusive linux files
-{{- if ne .chezmoi.os "linux" }}
-
-# Exclusive arch files
-{{- if ne .chezmoi.osRelease.id "arch" }}
+# Exclusive arch linux files
+{{- if and (eq .chezmoi.os "linux") (ne .chezmoi.osRelease.id "arch") }}
 .cache/yay/
 
 .config/systemd/user/noisetorch.service
 .config/USBGuard
 {{- end }}
 
+# Exclusive linux files
+{{- if ne .chezmoi.os "linux" }}
 .kde4/
 
 .config/autostart/
