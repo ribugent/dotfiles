@@ -4,6 +4,9 @@ macos
 LICENSE
 README.md
 
+# Exclusive linux files
+{{- if ne .chezmoi.os "linux" }}
+
 # Exclusive arch files
 {{- if ne .chezmoi.osRelease.id "arch" }}
 .cache/yay/
@@ -12,8 +15,6 @@ README.md
 .config/USBGuard
 {{- end }}
 
-# Exclusive linux files
-{{- if ne .chezmoi.os "linux" }}
 .kde4/
 
 .config/autostart/
