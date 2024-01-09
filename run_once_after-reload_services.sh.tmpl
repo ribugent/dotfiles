@@ -4,6 +4,12 @@
 # Packages hash: {{ include "private_dot_config/systemd/user/noisetorch.service.tmpl" | sha256sum }}
 set -euo pipefail
 
+OS="{{ .chezmoi.os }}"
+
+if [[ $OS != "linux" ]]; then
+	exit 0
+fi;
+
 systemctl --user enable --now jenv-refresh.path
 if [[ -d ~/.config/systemd/user/noisetorch.service ]]; then
 	systemctl --user enable noisetorch.service
