@@ -1,7 +1,10 @@
-if test (uname -m) = "Linux"
+if test (uname) = "Linux"
     set -x BROWSER xdg-open
 end
 set -x EDITOR vim
+if test (uname) = "Darwin"
+    set -x HOMEBREW_CAT 1
+end
 set -x MANPAGER 'less -R --use-color -Dd+r -Du+b'
 set -x GTK_OVERLAY_SCROLLING 0
 # set -x GTK_USE_PORTAL 1
