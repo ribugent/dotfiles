@@ -7,9 +7,15 @@
 			"auth": "{{ pass "docker/dockerRegistry" }}"
 		}
 	},
+{{- if eq .chezmoi.os "darwin" }}
+	"credsStore": "desktop",
+{{- end }}
 	"credHelpers": {
 		"{{ pass "aws/accountId" }}.dkr.ecr.{{ pass "aws/region" }}.amazonaws.com": "ecr-login"
 	},
+{{- if eq .chezmoi.os "darwin" }}
+	"currentContext": "desktop-linux",
+{{- end }}
 	"aliases": {
 		"builder": "buildx"
 	}
