@@ -1,4 +1,6 @@
-set -x BROWSER xdg-open
+if test (uname -m) = "Linux"
+    set -x BROWSER xdg-open
+end
 set -x EDITOR vim
 set -x MANPAGER 'less -R --use-color -Dd+r -Du+b'
 set -x GTK_OVERLAY_SCROLLING 0
