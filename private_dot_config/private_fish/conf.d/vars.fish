@@ -3,7 +3,7 @@ if test (uname) = "Linux"
 end
 set -x EDITOR vim
 if test (uname) = "Darwin"
-    set -x HOMEBREW_CAT 1
+    set -x HOMEBREW_BAT 1
 end
 set -x MANPAGER 'less -R --use-color -Dd+r -Du+b'
 set -x GTK_OVERLAY_SCROLLING 0
