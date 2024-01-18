@@ -179,4 +179,12 @@ Enable the firewalld by default, and [integrate the docker interface](https://do
 
 *ℹ️ Linux Only*
 
-Setups system java, perl and python versions to avoid issues when building packages.
+Setup system java, perl and python versions to avoid issues when building packages.
+Third-party account settings
+
+### Third-party services setup
+
+- Increase AWS S3 concurrent requests
+- Docker registries
+- npm private registry
+- Databricks service
