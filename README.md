@@ -2,19 +2,28 @@
 
 >_There's no place like 🏡_
 
-This repository contains all the dotfiles I use on my work computer.
+This repository contains all the dotfiles I use on my work computer, which currently supports Arch Linux and macOS
 
 All the files are managed using [chezmoi](https://www.chezmoi.io/), but the secrets and sensitive information are stored using [pass](https://www.passwordstore.org/)
 
 ## Prerequisites
 
-- [chezmoi](https://www.chezmoi.io/)
-- [pass](https://www.passwordstore.org/)
-- [gnupg](https://gnupg.org/)
-- [git](https://git-scm.com/)
-- [yay](https://github.com/Jguer/yay) (Arch Linux only)
-- [base-devel](https://archlinux.org/packages/core/any/base-devel/)
-- My gpg keys 🙈
+- All OSes:
+
+  - [chezmoi](https://www.chezmoi.io/)
+  - [pass](https://www.passwordstore.org/)
+  - [gnupg](https://gnupg.org/)
+  - [git](https://git-scm.com/)
+  - My gpg keys 🙈
+
+- Arch Linux:
+  - [yay](https://github.com/Jguer/yay) (Arch Linux only)
+  - [base-devel](https://archlinux.org/packages/core/any/base-devel/)
+
+- macOS:
+
+  - [Brew](https://brew.sh)
+
 
 ## Bootstrapping
 
@@ -59,56 +68,21 @@ All the files are managed using [chezmoi](https://www.chezmoi.io/), but the secr
 
 ## Included configuration
 
-### Arch Linux
-
-Installing automatically packages and optional package dependencies using [yay](https://github.com/Jguer/yay), the lists can be found in [\[1\]](https://github.com/ribugent/dotfiles/blob/main/archlinux/packages.txt) and [\[2\]](https://github.com/ribugent/dotfiles/blob/main/archlinux/packages-optional.txt).
-
-Some drop-in configuration system files are installed using `makepkg`:
-
-- SDDM
-  - Enable HiDPI in Wayland
-  - Disable listening tcp connections in xorg
-  - Plasma Desktop settings
-- Kernel parameters
-  - Hardening
-    - Restrict `dmesg` to root only
-    - Disable `kexec` syscall
-    - Restrict pointers in proc filesystem
-  - Set swappiness to 20
-- [Reflector](https://wiki.archlinux.org/title/reflector): Options for selecting the mirrors
-- Faillock: block accounts after 5 consecutive authentication failures
-- Systemd resolved
-  - Disables default DNS servers
-  - Enable stub listener to be integrated with Docker (this solve issues DNS resolutions with custom domains on VPN connections)
-- xorg: Enforce 1080p resolution on my Dell XPS 13 laptop with 4k screen
-
-### ClamAV
-
-- Installs ClamAV
-- Enables update signatures services
-- Tune up the daemon configuration
-- ~~Set up daily scanning and reporting via notification~~
-
-### Firewalld
-
-Enable the firewalld by default, and [integrate the docker interface](https://docs.docker.com/network/iptables/#integration-with-firewalld) to the specified zone.
-
-### Fish
+### Fish shell
 
 Drop-in files for `$PATH` management:
 
 - [jenv](https://www.jenv.be/)
-- [nvm](https://github.com/nvm-sh/nvm)
+- [nodenv](https://github.com/nodenv/nodenv)
 - [plenv](https://github.com/tokuhirom/plenv)
 - [pyenv](https://github.com/pyenv/pyenv)
 - `~/.local/bin`
 
 Set some default env variables in order to:
 
-- Disable ugly GTK+ options
-- Enforce GTK+ apps to use Plasma Desktop file dialogs
-- Default(terminal) editor to `vim`
-- Set `$BROWSER` to use `xdg-open`
+- (Linux only) Disable ugly GTK+ options
+- (Linux only) Default(terminal) editor to `vim`
+- (Linux only) Set `$BROWSER` to use `xdg-open`
 - Enable colors on man pages
 - Aliases
   - `cat` for [`bat -pp`](https://github.com/sharkdp/bat)
@@ -136,7 +110,7 @@ Currently, I'm using [oh-my-fish](https://github.com/oh-my-fish/oh-my-fish). The
 
 ### GnuPG
 
-Set `pinentry-qt` as the default pinentry program.
+Set `pinentry-qt` as the default pinentry program in Linux and set `$GPG_TTY` environment variable to allow pinentry-curses working in macOS.
 
 ### Gradle
 
@@ -144,24 +118,65 @@ Disable ram consuming gradle daemon... I have 16GB of RAM, but it's not enough s
 
 ### Jenv
 
+*ℹ️ Linux Only*
+
 Automatically register and refresh jdk versions using systemd user units
 
 - [jenv-refresh.path](https://github.com/ribugent/dotfiles/blob/main/private_dot_config/systemd/user/jenv-refresh.path)
 - [jenv-refresh.service](https://github.com/ribugent/dotfiles/blob/main/private_dot_config/systemd/user/jenv-refresh.service)
 
-### Noisetorch
-
-Autoloading noisetorch when my microphone is plugged-in using [systemd user unit](https://github.com/ribugent/dotfiles/blob/main/private_dot_config/systemd/user/noisetorch.service.tmpl)
-
 ### Ssh
 
 Basic ssh configuration with known hosts and rendering work sensitive hosts from the secret store using a [template](https://github.com/ribugent/dotfiles/blob/main/.chezmoitemplates/ssh_config_host).
 
-### Touchegg
+### Arch Linux system
 
-- Modifify the config to get `pinch` working in Firefox Developer Edition too
-- Setup launching the services
+*ℹ️ Arch Linux Only*
 
-### Yay (Arch Linux only)
+Installing automatically packages and optional package dependencies using [yay](https://github.com/Jguer/yay), the lists can be found in [\[1\]](https://github.com/ribugent/dotfiles/blob/main/archlinux/packages.txt) and [\[2\]](https://github.com/ribugent/dotfiles/blob/main/archlinux/packages-optional.txt).
+
+Some drop-in configuration system files are installed using `makepkg`:
+
+- SDDM
+  - Enable HiDPI in Wayland
+  - Disable listening tcp connections in xorg
+  - Plasma Desktop settings
+- Kernel parameters
+  - Hardening
+    - Restrict `dmesg` to root only
+    - Disable `kexec` syscall
+    - Restrict pointers in proc filesystem
+  - Set swappiness to 20
+- [Reflector](https://wiki.archlinux.org/title/reflector): Options for selecting the mirrors
+- Faillock: block accounts after 5 consecutive authentication failures
+- Systemd resolved
+  - Disables default DNS servers
+  - Enable stub listener to be integrated with Docker (this solve issues DNS resolutions with custom domains on VPN connections)
+- xorg: Enforce 1080p resolution on my Dell XPS 13 laptop with 4k screen
+
+### macOS system
+
+*ℹ️ macOS Only*
+
+Installing automatically packages using a [Brewfile](https://github.com/ribugent/dotfiles/blob/main/macos/Brewfile)
+
+### ClamAV
+
+*ℹ️ Linux Only*
+
+- Installs ClamAV
+- Enables update signatures services
+- Tune up the daemon configuration
+- ~~Set up daily scanning and reporting via notification~~
+
+### Firewalld
+
+*ℹ️ Linux Only*
+
+Enable the firewalld by default, and [integrate the docker interface](https://docs.docker.com/network/iptables/#integration-with-firewalld) to the specified zone.
+
+### Yay
+
+*ℹ️ Linux Only*
 
 Setups system java, perl and python versions to avoid issues when building packages.
