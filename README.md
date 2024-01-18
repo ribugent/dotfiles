@@ -188,3 +188,30 @@ Third-party account settings
 - Docker registries
 - npm private registry
 - Databricks service
+
+
+# Password store structure
+For those who want to reuse these dotfiles, this requires the following structure:
+
+```
+Password Store
+├── aws
+│   ├── accountId
+│   └── region
+├── databricks
+│   ├── prod
+│   └── staging
+├── docker
+│   ├── dockerRegistry
+│   └── githubRegistry
+├── npm
+│   └── github
+└── ssh
+    ├── hosts
+    └── keys
+        ├── arch-aur
+        ├── github
+        └── work
+```
+
+Depending on the case, the secret is stored as a password, on other some extra fields are provided additionally, and in other cases, raw content is provided, check out the templates to get more details.
