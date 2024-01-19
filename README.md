@@ -158,7 +158,8 @@ Some drop-in configuration system files are installed using `makepkg`:
 
 *ℹ️ macOS Only*
 
-Installing automatically packages using a [Brewfile](https://github.com/ribugent/dotfiles/blob/main/macos/Brewfile)
+- Installing automatically packages from a [Brewfile](https://github.com/ribugent/dotfiles/blob/main/macos/Brewfile)
+- Fix keybindings for Home/End keys using a regular keyboard
 
 ### ClamAV
 
