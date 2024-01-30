@@ -1,0 +1,8 @@
+function fish_greeting
+{{- if eq .chezmoi.os "linux" }}
+	paleofetch
+{{- end }}
+{{- if eq .chezmoi.os "darwin" }}
+	neowofetch --disable packages --disable de --disable wm --disable editor --disable kernel --disable resolution
+{{- end }}
+end
