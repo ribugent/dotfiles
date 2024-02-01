@@ -9,6 +9,8 @@ end
 
 if test (uname) = "Darwin"
     set -x HOMEBREW_BAT 1
+
+    fish_add_path /opt/homebrew/opt/curl/bin
 end
 
 set -x EDITOR vim
