@@ -3,6 +3,6 @@ function fish_greeting
 	paleofetch
 {{- end }}
 {{- if eq .chezmoi.os "darwin" }}
-	neowofetch --disable packages --disable de --disable wm --disable editor --disable kernel --disable resolution
+	neowofetch --disable packages --disable de --disable wm --disable editor --disable kernel --disable resolution --iterm2 {{ .chezmoi.workingTree }}/images/lm.png --size 250px
 {{- end }}
 end
