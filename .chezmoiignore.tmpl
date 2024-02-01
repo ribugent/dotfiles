@@ -5,7 +5,7 @@ LICENSE
 README.md
 
 # Exclusive arch linux files
-{{- if and (ne .chezmoi.os "linux") (ne .chezmoi.osRelease.id "arch") }}
+{{- if or (ne .chezmoi.os "linux") (ne .chezmoi.osRelease.id "arch") }}
 .cache/yay/
 
 .config/systemd/user/noisetorch.service
