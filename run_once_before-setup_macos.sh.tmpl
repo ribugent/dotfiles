@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+
+OS=$(uname)
+
+if [[ "$OS" != "Darwin" ]]; then
+	exit 0
+fi;
+
+# iTerm2 setup loading settings from dotfiles and keeping them in sync
+defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "{{ .chezmoi.workingTree }}/macos"
+defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
+defaults write com.googlecode.iterm2.plist NoSyncNeverRemindPrefsChangesLostForFile_selection -int 2
