@@ -25,5 +25,5 @@ sudo xattr -r -d com.apple.quarantine \
 	/Applications/QtPass.app
 
 # Services enabling
-sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist
-brew services start uptimed
+sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist 2>/dev/null || true
+brew services start uptimed > /dev/null
