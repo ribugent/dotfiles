@@ -11,7 +11,6 @@ if test (uname) = "Darwin"
     set -x HOMEBREW_BAT 1
 
     fish_add_path /opt/homebrew/opt/curl/bin
-    set -x fish_complete_path $fish_complete_path /opt/homebrew/opt/curl/share/fish/vendor_completions.d
 end
 
 set -x EDITOR vim
