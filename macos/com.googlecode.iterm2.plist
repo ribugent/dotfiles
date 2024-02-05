@@ -468,7 +468,7 @@
 	<key>HideTab</key>
 	<false/>
 	<key>Hotkey</key>
-	<true/>
+	<false/>
 	<key>HotkeyChar</key>
 	<integer>63247</integer>
 	<key>HotkeyCode</key>
@@ -477,6 +477,8 @@
 	<true/>
 	<key>HotkeyModifiers</key>
 	<integer>8388864</integer>
+	<key>HotkeyTermAnimationDuration</key>
+	<real>0.10000000149011612</real>
 	<key>IRMemory</key>
 	<integer>4</integer>
 	<key>LeftCommand</key>
@@ -825,8 +827,34 @@
 			</dict>
 			<key>Guid</key>
 			<string>BAA73B8C-A570-4AC0-9EB7-05075D00A76F</string>
+			<key>Has Hotkey</key>
+			<true/>
 			<key>Horizontal Spacing</key>
 			<real>1</real>
+			<key>HotKey Activated By Modifier</key>
+			<false/>
+			<key>HotKey Alternate Shortcuts</key>
+			<array/>
+			<key>HotKey Characters</key>
+			<string></string>
+			<key>HotKey Characters Ignoring Modifiers</key>
+			<string></string>
+			<key>HotKey Key Code</key>
+			<integer>111</integer>
+			<key>HotKey Modifier Activation</key>
+			<integer>0</integer>
+			<key>HotKey Modifier Flags</key>
+			<integer>0</integer>
+			<key>HotKey Window Animates</key>
+			<true/>
+			<key>HotKey Window AutoHides</key>
+			<true/>
+			<key>HotKey Window Dock Click Action</key>
+			<integer>0</integer>
+			<key>HotKey Window Floats</key>
+			<true/>
+			<key>HotKey Window Reopens On Activation</key>
+			<false/>
 			<key>Icon</key>
 			<integer>0</integer>
 			<key>Idle Code</key>
