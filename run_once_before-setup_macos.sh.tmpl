@@ -13,6 +13,10 @@ defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "{{ .chezmo
 defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 defaults write com.googlecode.iterm2.plist NoSyncNeverRemindPrefsChangesLostForFile_selection -int 2
 
+# qtpass setup
+defaults write com.ijhack.QtPass.plist gitExecutable -string "$(brew --prefix)/bin/git"
+defaults write com.ijhack.QtPass.plist gpgExecutable -string "$(brew --prefix)/bin/gpg"
+
 # Quaratine bit removal from some apps which are safe bit not signed
 sudo xattr -r -d com.apple.quarantine \
 	/Applications/DiscreteScroll.app \
