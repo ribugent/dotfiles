@@ -12,3 +12,10 @@ fi;
 defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "{{ .chezmoi.workingTree }}/macos"
 defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 defaults write com.googlecode.iterm2.plist NoSyncNeverRemindPrefsChangesLostForFile_selection -int 2
+
+# Quaratine bit removal from some apps which are safe bit not signed
+sudo xattr -r -d com.apple.quarantine \
+	/Applications/DiscreteScroll.app \
+	/Applications/Meld.app \
+	/Applications/MuteSpotifyAds.app \
+	/Applications/QtPass.app
