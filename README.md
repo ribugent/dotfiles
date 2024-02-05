@@ -14,6 +14,7 @@ All the files are managed using [chezmoi](https://www.chezmoi.io/), but the secr
   - [pass](https://www.passwordstore.org/)
   - [gnupg](https://gnupg.org/)
   - [git](https://git-scm.com/)
+  - [git-delta](https://github.com/dandavison/delta)
   - My gpg keys 🙈
 
 - Arch Linux:
