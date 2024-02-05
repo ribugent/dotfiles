@@ -1,0 +1,6 @@
+# Exclusive linux files
+{{- if eq .chezmoi.os "linux" }}
+.local/share/applications/.slack.desktop
+.local/share/applications/.Zoom.desktop
+config/.code-flags.conf
+{{- end }}
