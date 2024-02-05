@@ -161,6 +161,10 @@ Some drop-in configuration system files are installed using `makepkg`:
 
 - Installing automatically packages from a [Brewfile](https://github.com/ribugent/dotfiles/blob/main/macos/Brewfile)
 - Fix keybindings for Home/End keys using a regular keyboard
+- Quarantine bit auto-removal from few specific apps
+- Setup qtpass to find out git and gpg utlities from brew
+- Enable uptimed and locate services
+- Enable fingerprint for sudo
 
 ### ClamAV
 
@@ -176,6 +180,18 @@ Some drop-in configuration system files are installed using `makepkg`:
 *ℹ️ Linux Only*
 
 Enable the firewalld by default, and [integrate the docker interface](https://docs.docker.com/network/iptables/#integration-with-firewalld) to the specified zone.
+
+### Yakuake
+
+*ℹ️ Linux Only*
+
+Set up dropdown terminal with Fira Code nerdfonts
+
+### iTerm2
+
+*ℹ️ macOS Only*
+
+Set up dropdown terminal with Fira Code nerdfonts
 
 ### Yay
 
