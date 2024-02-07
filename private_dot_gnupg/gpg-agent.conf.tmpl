@@ -1,0 +1,7 @@
+{{- if eq .chezmoi.os "linux" -}}
+pinentry-program /usr/bin/pinentry-qt
+{{- end }}
+
+{{- if eq .chezmoi.os "darwin" -}}
+pinentry-program /opt/homebrew/bin/pinentry-mac
+{{- end}}
