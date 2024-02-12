@@ -3,5 +3,5 @@ pinentry-program /usr/bin/pinentry-qt
 {{- end }}
 
 {{- if eq .chezmoi.os "darwin" -}}
-pinentry-program /opt/homebrew/bin/pinentry-mac
+pinentry-program /opt/homebrew/bin/pinentry-curses
 {{- end}}
