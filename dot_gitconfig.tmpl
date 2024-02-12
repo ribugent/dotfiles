@@ -18,8 +18,11 @@
         rebase = merges
 
 [diff]
-        tool = meld
+        tool = vscode
         ff = false
+
+[difftool "vscode"]
+    cmd = code --new-window --wait --diff $LOCAL $REMOTE
 
 [mergetool]
         prompt = false
