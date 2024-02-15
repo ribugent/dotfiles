@@ -1,5 +1,6 @@
 [default]
 output = json
 region = eu-west-1
+cli_binary_format = raw-in-base64-out
 s3 =
     max_concurrent_requests = 100
