@@ -20,6 +20,7 @@ All the files are managed using [chezmoi](https://www.chezmoi.io/), but the secr
 - Arch Linux:
   - [yay](https://github.com/Jguer/yay) (Arch Linux only)
   - [base-devel](https://archlinux.org/packages/core/any/base-devel/)
+  - User sudo enabled
 
 - macOS:
 
