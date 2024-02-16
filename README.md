@@ -215,22 +215,22 @@ For those who want to reuse these dotfiles, this requires the following structur
 ```
 Password Store
 ├── aws
-│   ├── accountId
-│   └── region
+│   ├── accountId -> password
+│   └── region    -> password
 ├── databricks
-│   ├── prod
-│   └── staging
+│   ├── prod    -> password(api key), fields(host)
+│   └── staging -> password(api key), fields(host)
 ├── docker
-│   ├── dockerRegistry
-│   └── githubRegistry
+│   ├── dockerRegistry -> password(token)
+│   └── githubRegistry -> password(token)
 ├── npm
-│   └── github
+│   └── github -> password(token)
 └── ssh
-    ├── hosts
+    ├── hosts -> raw(json array equivalent of ssh regular config, see how is rendered in .chezmoitemplates/ssh_config_host )
     └── keys
-        ├── arch-aur
-        ├── github
-        └── work
+        ├── arch-aur -> raw(ssh key)
+        ├── github   -> raw(ssh key)
+        └── work     -> raw(ssh key)
 ```
 
-Depending on the case, the secret is stored as a password, on other some extra fields are provided additionally, and in other cases, raw content is provided, check out the templates to get more details.
+Every entry details how is stored the info, as password, password with fields or just raw; in brackets some clarifications are specified.
