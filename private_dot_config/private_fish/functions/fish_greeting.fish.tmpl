@@ -1,8 +1,8 @@
 function fish_greeting
 {{- if eq .chezmoi.os "linux" }}
-	paleofetch
+paleofetch
 {{- end }}
 {{- if eq .chezmoi.os "darwin" }}
-	neowofetch --disable packages --disable de --disable wm --disable editor --disable kernel --disable resolution --iterm2 {{ .chezmoi.workingTree }}/images/lm.png --size 250px
+fastfetch -s title:separator:os:host:uptime:packages:shell:display:terminal:terminalfont:cpu:gpu:disk:memory:swap:battery --logo {{ .chezmoi.workingTree }}/images/lm.png --logo-type iterm --logo-width 38 --logo-height 18
 {{- end }}
 end
