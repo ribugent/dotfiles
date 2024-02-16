@@ -39,3 +39,14 @@ README.md
 
 Library/
 {{- end }}
+
+# Exclude files when secrets are not available
+{{- if (not (stat (joinPath .chezmoi.homeDir "/.password-store"))) }}
+.databrickscfg
+.npmrc
+.docker/config.json
+.ssh/config
+.ssh/arch-aur
+.ssh/github
+.ssh/work
+{{- end }}
