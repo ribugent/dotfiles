@@ -160,6 +160,7 @@ Some drop-in configuration system files are installed using `makepkg`:
 *ℹ️ macOS Only*
 
 - Installing automatically packages from a [Brewfile](https://github.com/ribugent/dotfiles/blob/main/macos/Brewfile)
+- GNU coreutils and recent version of curl in `$PATH`
 - Fix keybindings for Home/End keys using a regular keyboard
 - Quarantine bit auto-removal from few specific apps
 - Setup qtpass to find out git and gpg utlities from brew

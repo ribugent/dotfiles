@@ -10,7 +10,9 @@ end
 if test (uname) = "Darwin"
     set -x HOMEBREW_BAT 1
 
-    fish_add_path /opt/homebrew/opt/curl/bin
+    BREW_PREFIX=(brew --prefix)
+    fish_add_path $BREW_PREFIX/opt/curl/bin
+    fish_add_path $BREW_PREFIX/opt/coreutils/libexec/gnubin
 end
 
 set -x EDITOR vim
