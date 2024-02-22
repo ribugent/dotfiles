@@ -9,6 +9,10 @@ end
 
 if test (uname) = "Darwin"
     set -x HOMEBREW_BAT 1
+    set -x HOMEBREW_FORCE_BREWED_CURL 1
+    set -x HOMEBREW_FORCE_BREWED_GIT 1
+    set -x HOMEBREW_FORCE_VENDOR_RUBY 1
+    set -x HOMEBREW_NO_ANALYTICS 1
 
     set -l BREW_PREFIX (brew --prefix)
     fish_add_path $BREW_PREFIX/opt/curl/bin
