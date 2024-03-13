@@ -14,8 +14,15 @@ if test (uname) = "Darwin"
     set -x HOMEBREW_FORCE_VENDOR_RUBY 1
     set -x HOMEBREW_NO_ANALYTICS 1
 
-    fish_add_path /opt/homebrew/opt/curl/bin
-    fish_add_path /opt/homebrew/opt/coreutils/libexec/gnubin
+    set -l HOMEBREW_PREFIX
+    if test (uname -m) = "arm64"
+        set HOMEBREW_PREFIX /opt/homebrew
+    else
+        set HOMEBREW_PREFIX /usr/local
+    end
+
+    fish_add_path $HOMEBREW_PREFIX/opt/curl/bin
+    fish_add_path $HOMEBREW_PREFIX/opt/coreutils/libexec/gnubin
 end
 
 set -x EDITOR vim
