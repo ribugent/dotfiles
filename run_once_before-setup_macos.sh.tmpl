@@ -15,6 +15,9 @@ defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "{{ .chezmo
 defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 defaults write com.googlecode.iterm2.plist NoSyncNeverRemindPrefsChangesLostForFile_selection -int 2
 
+# Disable press and hold for keys
+defaults write -g ApplePressAndHoldEnabled -bool false
+
 # qtpass setup
 defaults write com.ijhack.QtPass.plist gitExecutable -string "$(brew --prefix)/bin/git"
 defaults write com.ijhack.QtPass.plist gpgExecutable -string "$(brew --prefix)/bin/gpg"
