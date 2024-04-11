@@ -8,12 +8,6 @@ if test (uname) = "Linux"
 end
 
 if test (uname) = "Darwin"
-    set -x HOMEBREW_BAT 1
-    set -x HOMEBREW_FORCE_BREWED_CURL 1
-    set -x HOMEBREW_FORCE_BREWED_GIT 1
-    set -x HOMEBREW_FORCE_VENDOR_RUBY 1
-    set -x HOMEBREW_NO_ANALYTICS 1
-
     set -l HOMEBREW_PREFIX
     if test (uname -m) = "arm64"
         set HOMEBREW_PREFIX /opt/homebrew
