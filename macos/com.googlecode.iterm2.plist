@@ -356,6 +356,8 @@
 	<string>BAA73B8C-A570-4AC0-9EB7-05075D00A76F</string>
 	<key>EnableProxyIcon</key>
 	<false/>
+	<key>FunctionKey</key>
+	<integer>10</integer>
 	<key>GlobalKeyMap</key>
 	<dict>
 		<key>0x19-0x60000</key>
@@ -483,6 +485,10 @@
 	<integer>4</integer>
 	<key>LeftCommand</key>
 	<integer>7</integer>
+	<key>LeftControl</key>
+	<integer>11</integer>
+	<key>LeftOption</key>
+	<integer>2</integer>
 	<key>NeverWarnAboutShortLivedSessions_BAA73B8C-A570-4AC0-9EB7-05075D00A76F</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_BAA73B8C-A570-4AC0-9EB7-05075D00A76F_selection</key>
@@ -1305,6 +1311,12 @@
 	<true/>
 	<key>RetinaInlineImages</key>
 	<false/>
+	<key>RightCommand</key>
+	<integer>8</integer>
+	<key>RightControl</key>
+	<integer>12</integer>
+	<key>RightOption</key>
+	<integer>3</integer>
 	<key>SaveScrollBufferWhenClearing</key>
 	<true/>
 	<key>ShowFullScreenTabBar</key>
