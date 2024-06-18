@@ -1,6 +1,17 @@
-# Exclusive linux files
 {{- if eq .chezmoi.os "linux" }}
+	{{- template "macos_files" }}
+
+	{{ if (ne .chezmoi.osRelease.id "arch") }}
+		{{- template "arch_files" }}
+	{{- end }}
+{{ end }}
+
+{{- if eq .chezmoi.os "darwin" }}
+	{{- template "linux_files" . }}
+	{{- template "arch_files" . }}
+{{ end  }}
+
+# Old files to remove
 .local/share/applications/.slack.desktop
 .local/share/applications/.Zoom.desktop
 config/.code-flags.conf
-{{- end }}

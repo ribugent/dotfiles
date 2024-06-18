@@ -1,0 +1,15 @@
+.kde4/
+
+.config/autostart/
+.config/fontconfig/
+.config/pinentry/preexec
+.config/systemd/
+.config/USBGuard/
+.config/yay/
+
+.config/electron-flags.conf
+.config/baloofilerc
+.config/konsolerc
+.config/yakuakerc
+
+.local/

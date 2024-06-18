@@ -1,0 +1,4 @@
+.cache/yay/
+
+.config/systemd/user/noisetorch.service
+.config/USBGuard

@@ -1,0 +1,7 @@
+.homebrew/
+.config/karabiner/
+.config/fish/conf.d/gnupg.fish
+.config/fish/functions/clear.fish
+.hushlogin
+
+Library/

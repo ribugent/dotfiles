@@ -5,45 +5,18 @@ macos
 LICENSE
 README.md
 
-# Exclusive arch linux files
-{{- if or (ne .chezmoi.os "linux") (ne .chezmoi.osRelease.id "arch") }}
-.cache/yay/
-
-.config/systemd/user/noisetorch.service
-.config/USBGuard
-{{- end }}
-
-# Exclusive linux files
 {{- if ne .chezmoi.os "linux" }}
-.kde4/
+	{{- template "linux_files" . }}
+{{ end }}
 
-.config/autostart/
-.config/fontconfig/
-.config/pinentry/preexec
-.config/systemd/
-.config/USBGuard/
-.config/yay/
+{{- if or (ne .chezmoi.os "linux") (ne .chezmoi.osRelease.id "arch") }}
+	{{- template "arch_files" . }}
+{{ end }}
 
-.config/electron-flags.conf
-.config/baloofilerc
-.config/konsolerc
-.config/yakuakerc
-
-.local/
-{{- end }}
-
-# Exclusive macOS files
 {{- if ne .chezmoi.os "darwin" }}
-.homebrew/
-.config/karabiner/
-.config/fish/conf.d/gnupg.fish
-.config/fish/functions/clear.fish
-.hushlogin
+	{{- template "macos_files" . }}
+{{ end }}
 
-Library/
-{{- end }}
-
-# Exclude files when secrets are not available
 {{- if (not (stat (joinPath .chezmoi.homeDir "/.password-store"))) }}
 .databrickscfg
 .npmrc
@@ -52,4 +25,4 @@ Library/
 .ssh/arch-aur
 .ssh/github
 .ssh/work
-{{- end }}
+{{ end }}
