@@ -19,7 +19,7 @@ if test (uname) = "Darwin"
     fish_add_path $HOMEBREW_PREFIX/opt/coreutils/libexec/gnubin
 end
 
-set -x EDITOR vim
+set -x EDITOR nvim
 set -x MANPAGER 'less -R --use-color -Dd+r -Du+b'
 set -x SAM_CLI_TELEMETRY 0
 # set -x GTK_USE_PORTAL 1
