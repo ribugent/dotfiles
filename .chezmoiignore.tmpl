@@ -5,15 +5,15 @@ macos
 LICENSE
 README.md
 
-{{- if ne .chezmoi.os "linux" }}
+{{ if ne .chezmoi.os "linux" }}
 	{{- template "linux_files" . }}
 {{ end }}
 
-{{- if or (ne .chezmoi.os "linux") (ne .chezmoi.osRelease.id "arch") }}
+{{ if or (ne .chezmoi.os "linux") (ne .chezmoi.osRelease.id "arch") }}
 	{{- template "arch_files" . }}
 {{ end }}
 
-{{- if ne .chezmoi.os "darwin" }}
+{{ if ne .chezmoi.os "darwin" }}
 	{{- template "macos_files" . }}
 {{ end }}
 
