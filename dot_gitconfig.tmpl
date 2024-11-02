@@ -1,7 +1,12 @@
 [user]
         name = {{ .git.name }}
+{{ if eq .profile "personal" }}
+        email = {{ .git.personal.email }}
+        signingkey = {{ .git.personal.signkey }}
+{{ else if eq .profile "launchmetrics" }}
         email = {{ .git.work.email }}
         signingkey = {{ .git.work.signkey }}
+{{ end }}
 
 [commit]
         verbose = true
@@ -33,6 +38,7 @@
 [url "https://github.com"]
 	insteadOf = git://github.com
 
+{{ if eq .profile "launchmetrics" }}
 [includeIf "hasconfig:remote.*.url:{{ .git.work.remotePrefix }}/**"]
         path = ~/.gitconfig-lm-hooks.inc
 
@@ -41,6 +47,7 @@
 
 [includeIf "hasconfig:remote.*.url:ssh://aur@aur.archlinux.org/**"]
         path = ~/.gitconfig-ribugent.inc
+{{ end }}
 
 [color "status"]
 	added = green bold

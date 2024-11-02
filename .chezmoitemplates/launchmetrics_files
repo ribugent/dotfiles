@@ -15,10 +15,8 @@
 # TODO: The template needs to be aware of the profile
 .docker/
 
-# TODO: Git configuration needs a refactor
 .gitconfig-lm-hooks.inc
 .gitconfig-ribugent.inc
-.gitconfig
 
 .gradle/
 .local/share/applications/io.dbeaver.DBeaver.desktop
