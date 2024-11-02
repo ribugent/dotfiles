@@ -1,6 +1,6 @@
 #!/bin/bash
-# PKGBUILD hash: {{ include "archlinux/config/PKGBUILD" | sha256sum }}
-# Install hash: {{ include "archlinux/config/config.install" | sha256sum }}
+# PKGBUILD hash: {{ include "profiles/launchmetrics/archlinux/config/PKGBUILD" | sha256sum }}
+# Install hash: {{ include "profiles/launchmetrics/archlinux/config/config.install" | sha256sum }}
 set -euo pipefail
 
 OS="{{ .chezmoi.os }}"
@@ -10,5 +10,5 @@ if [[ "$OS" != "linux" && "$DISTRO" != "arch" ]]; then
 	exit 0
 fi;
 
-cd "{{ .chezmoi.workingTree }}/archlinux/config"
+cd "{{ .chezmoi.workingTree }}/profiles/launchmetrics/archlinux/config"
 makepkg -f -si -c --noconfirm

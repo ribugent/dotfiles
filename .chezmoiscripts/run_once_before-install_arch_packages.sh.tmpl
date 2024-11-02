@@ -1,8 +1,8 @@
 #!/bin/bash
-# Packages hash: {{ include "archlinux/packages-arch.txt" | sha256sum }}
-# Packages hash: {{ include "archlinux/packages-archarm.txt" | sha256sum }}
-# Optional packages hash: {{ include "archlinux/packages-arch-optional.txt" | sha256sum }}
-# Optional packages hash: {{ include "archlinux/packages-archarm-optional.txt" | sha256sum }}
+# Packages hash: {{ include "profiles/launchmetrics/archlinux/packages-arch.txt" | sha256sum }}
+# Packages hash: {{ include "profiles/launchmetrics/archlinux/packages-archarm.txt" | sha256sum }}
+# Optional packages hash: {{ include "profiles/launchmetrics/archlinux/packages-arch-optional.txt" | sha256sum }}
+# Optional packages hash: {{ include "profiles/launchmetrics/archlinux/packages-archarm-optional.txt" | sha256sum }}
 set -euo pipefail
 
 function findMissing() {
@@ -24,10 +24,10 @@ fi;
 
 cd "{{ .chezmoi.workingTree }}"
 
-PACKAGES=$(cat archlinux/packages-$DISTRO.txt)
+PACKAGES=$(cat profiles/launchmetrics/archlinux/packages-$DISTRO.txt)
 MISSING_PACKAGES=$(findMissing "$PACKAGES")
 
-PACKAGES_OPTIONAL=$(cat archlinux/packages-$DISTRO-optional.txt)
+PACKAGES_OPTIONAL=$(cat profiles/launchmetrics/archlinux/packages-$DISTRO-optional.txt)
 MISSING_PACKAGES_OPTIONAL=$(findMissing "$PACKAGES_OPTIONAL")
 
 if [ ! -z "$MISSING_PACKAGES" ]; then
