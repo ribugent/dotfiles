@@ -1,8 +1,4 @@
 .aws/
-
-# TODO: Mixed aws completions and macos specific ones
-.config/fish/conf.d/completions.fish
-
 .config/fish/conf.d/lm-build.fish
 
 # TODO: The template needs to be aware of the profile
