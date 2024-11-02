@@ -1,7 +1,6 @@
 #!/bin/bash
 # Packages hash: {{ include "private_dot_config/systemd/user/jenv-refresh.path" | sha256sum }}
 # Packages hash: {{ include "private_dot_config/systemd/user/jenv-refresh.service" | sha256sum }}
-# Packages hash: {{ include "private_dot_config/systemd/user/noisetorch.service.tmpl" | sha256sum }}
 set -euo pipefail
 
 OS="{{ .chezmoi.os }}"
@@ -11,8 +10,5 @@ if [[ $OS != "linux" ]]; then
 fi;
 
 systemctl --user enable --now jenv-refresh.path
-if [[ -d ~/.config/systemd/user/noisetorch.service ]]; then
-	systemctl --user enable noisetorch.service
-fi
 
 systemctl --user daemon-reload

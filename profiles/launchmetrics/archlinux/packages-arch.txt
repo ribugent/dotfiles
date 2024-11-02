@@ -155,7 +155,6 @@ nodenv
 nodenv-node-build
 nodenv-nvmrc
 nohang
-noisetorch
 notes
 obsidian
 okular

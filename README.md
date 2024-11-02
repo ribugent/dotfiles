@@ -56,10 +56,6 @@ All the files are managed using [chezmoi](https://www.chezmoi.io/), but the secr
     email = "<personal email>"
     signkey = "<personal gpg sign key>"
     remotePrefix = "<personal git remote prefix>"
-
-    [date.noisetorch]
-    device_unit = "<microphone device unit>"
-    device_name = "<microphone device name>"
     ```
 
 4. Finally apply
