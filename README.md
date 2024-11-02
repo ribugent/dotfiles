@@ -44,6 +44,9 @@ All the files are managed using [chezmoi](https://www.chezmoi.io/), but the secr
     command = "delta"
     args = ["--pager=never"]
 
+    [data]
+    profile "<launchmetrics | personal>"
+
     [data.git]
     name = "<your name>"
 
