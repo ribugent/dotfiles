@@ -1,8 +1,11 @@
 function fish_greeting
-{{- if eq .chezmoi.os "linux" }}
-paleofetch
-{{- end }}
-{{- if eq .chezmoi.os "darwin" }}
-fastfetch -s title:separator:os:host:uptime:packages:shell:display:terminal:terminalfont:cpu:gpu:disk:memory:swap:battery --logo {{ .chezmoi.workingTree }}/images/lm.png --logo-type iterm --logo-width 38 --logo-height 18
-{{- end }}
+	fastfetch \
+		-s title:separator:os:host:uptime:packages:shell:display:terminal:terminalfont:cpu:gpu:disk:memory:swap:battery \
+		{{- if eq .profile "launchmetrics" }}
+		--logo {{ .chezmoi.workingTree }}/images/lm.png \
+		--logo-width 38 \
+		--logo-height 18 \
+		--logo-type {{ if ne .chezmoi.os "darwin" }} iterm {{ else }} kitty {{ end }}
+		{{- end }}
+
 end
