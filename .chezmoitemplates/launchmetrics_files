@@ -1,0 +1,25 @@
+.aws/
+
+# TODO: Mixed aws completions and macos specific ones
+.config/fish/conf.d/completions.fish
+
+.config/fish/conf.d/lm-build.fish
+.config/JetBrains/
+
+.databrickscfg
+
+# TODO: The template needs to be aware of the profile
+.docker/
+
+# TODO: Git configuration needs a refactor
+.gitconfig-lm-hooks.inc
+.gitconfig-ribugent.inc
+.gitconfig
+
+.gradle/
+.local/share/applications/io.dbeaver.DBeaver.desktop
+.npmrc
+
+# TODO: The ssh config need to be aware of the profile
+.ssh/config
+.ssh/work
