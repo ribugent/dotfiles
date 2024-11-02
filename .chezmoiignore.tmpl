@@ -16,6 +16,10 @@ README.md
 	{{- template "macos_files" . }}
 {{ end }}
 
+{{ if ne .profile "launchmetrics" }}
+	{{- template "launchmetrics_files" . }}
+{{ end }}
+
 {{- if (not (stat (joinPath .chezmoi.homeDir "/.password-store"))) }}
 .databrickscfg
 .npmrc
