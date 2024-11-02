@@ -4,6 +4,10 @@
 .config/fish/conf.d/completions.fish
 
 .config/fish/conf.d/lm-build.fish
+
+# TODO: The template needs to be aware of the profile
+.config/fish/functions/fish_greeting.fish
+
 .config/JetBrains/
 
 .databrickscfg
