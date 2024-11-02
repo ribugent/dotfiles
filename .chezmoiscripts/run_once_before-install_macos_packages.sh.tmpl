@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Packages hash: {{ include "macos/Brewfile" | sha256sum }}
+# Packages hash: {{ include "profiles/launchmetrics/macos/Brewfile" | sha256sum }}
 
 set -euo pipefail
 
@@ -10,4 +10,4 @@ if [[ $OS != "darwin" ]]; then
 fi;
 
 cd "{{ .chezmoi.workingTree }}"
-brew bundle --file macos/Brewfile --no-lock
+brew bundle --file profiles/launchmetrics/macos/Brewfile --no-lock

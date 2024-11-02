@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# Used files hash: {{ include "macos/sudo_local" | sha256sum }}
-# Used files hash: {{ include "macos/limit.maxfiles.plist" | sha256sum }}
+# Used files hash: {{ include "profiles/launchmetrics/macos/sudo_local" | sha256sum }}
+# Used files hash: {{ include "profiles/launchmetrics/macos/limit.maxfiles.plist" | sha256sum }}
 
 set -euo pipefail
 
@@ -34,12 +34,12 @@ sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist 2>/d
 brew services start uptimed > /dev/null
 
 # Increase max open files limit
-sudo cp {{ .chezmoi.workingTree }}/macos/limit.maxfiles.plist /Library/LaunchDaemons/limit.maxfiles.plist
+sudo cp {{ .chezmoi.workingTree }}/profiles/launchmetrics/macos/limit.maxfiles.plist /Library/LaunchDaemons/limit.maxfiles.plist
 sudo chown root:wheel /Library/LaunchDaemons/limit.maxfiles.plist
 sudo launchctl load -w /Library/LaunchDaemons/limit.maxfiles.plist 2> /dev/null || true
 
 # Setup sudo fingerprint
-sudo cp {{ .chezmoi.workingTree }}/macos/sudo_local /etc/pam.d/sudo_local
+sudo cp {{ .chezmoi.workingTree }}/profiles/launchmetrics/macos/sudo_local /etc/pam.d/sudo_local
 
 # Other
 brew analytics off
