@@ -51,8 +51,7 @@ sha256sums=('f0dfbb551261100c52624e836077be0155ea3d67c8c0c913ce2d4b3991348d72'
             'ff9684a7f9e9e274e3615b43c5b0da071f8fe58ba7411588e2abc91b18d7adbf'
             'f6f1a68247ad32db9257a5ca3d2c8fac771f03d6cda3cbb289354fe104f7ff4f'
             'a8d14e69da37642e072c044f9a930511342a02f70493225f02cc5c8ba297be4b'
-            'a98a4af95a457d692f0fee70afadde0f83940bc083b2e3dc21fc0b57317a441c'
-            '45e21be33e074d7a82a959d73808414cbee46408263dbfa3d748f603f0fe33d6'
+            '45e21be33e074d7a82a959d73808414cbee46408263dbfa3d748f603f0fe33d6')
             '4d5449dd5056a951475b311aed3b83c573da057755733791687cb1876b0915de')
 
 package() {
@@ -67,7 +66,6 @@ package() {
 	install -Dm0644 sysctl-swappiness.conf "$pkgdir/etc/sysctl.d/99-swappiness.conf"
 	install -Dm0644 systemd-resolved-disable-default-dns.conf "$pkgdir/usr/lib/systemd/resolved.conf.d/disable-default-dns.conf"
 	install -Dm0644 systemd-resolved-docker.conf "$pkgdir/usr/lib/systemd/resolved.conf.d/docker.conf"
-	install -Dm0644 xorg-monitor.conf "$pkgdir/etc/X11/xorg.conf.d/monitor.conf"
 
 	install -Dm0644 clamav-clamd.conf "$pkgdir/usr/share/ribugent/clamav-clamd.conf"
 	install -Dm0644 reflector.conf "$pkgdir/usr/share/ribugent/reflector.conf"
