@@ -13,7 +13,3 @@
 .gradle/
 .local/share/applications/io.dbeaver.DBeaver.desktop
 .npmrc
-
-# TODO: The ssh config need to be aware of the profile
-.ssh/config
-.ssh/work

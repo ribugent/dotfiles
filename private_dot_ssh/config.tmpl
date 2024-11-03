@@ -2,11 +2,24 @@ Host github.com
 	User ribugent
 	IdentityFile ~/.ssh/github
 
+{{ if eq .profile "personal" }}
+Host bitbucket.org
+	User ribugent
+	IdentityFile ~/.ssh/bitbucket
+
+
 Host aur.archlinux.org
 	IdentityFile ~/.ssh/arch-aur
 	User aur
 
-# Work hosts configuration
+{{- range fromJson (passRaw "ssh/personal_hosts") }}
+{{ template "ssh_config_host" . }}
+{{ end }}
+
+{{ end }}
+
+{{ if eq .profile "launchmetrics" }}
 {{- range fromJson (passRaw "ssh/hosts") }}
 {{ template "ssh_config_host" . }}
+{{ end }}
 {{ end }}

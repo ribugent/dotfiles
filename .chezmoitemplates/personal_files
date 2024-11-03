@@ -2,3 +2,5 @@
 .ssh/arch-aur.pub
 .ssh/bitbucket
 .ssh/bitbucket.pub
+.ssh/personal
+.ssh/personal.pub
