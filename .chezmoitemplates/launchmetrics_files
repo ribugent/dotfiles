@@ -4,9 +4,6 @@
 
 .databrickscfg
 
-# TODO: The template needs to be aware of the profile
-.docker/
-
 .gitconfig-lm-hooks.inc
 .gitconfig-ribugent.inc
 

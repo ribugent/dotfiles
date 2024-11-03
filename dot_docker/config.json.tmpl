@@ -10,9 +10,11 @@
 {{- if eq .chezmoi.os "darwin" }}
 	"credsStore": "desktop",
 {{- end }}
+{{- if eq .profile "launchmetrics" }}
 	"credHelpers": {
 		"{{ pass "aws/accountId" }}.dkr.ecr.{{ pass "aws/region" }}.amazonaws.com": "ecr-login"
 	},
+{{- end }}
 {{- if eq .chezmoi.os "darwin" }}
 	"currentContext": "desktop-linux",
 {{- end }}
