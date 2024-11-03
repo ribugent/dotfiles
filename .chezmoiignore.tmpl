@@ -20,6 +20,10 @@ README.md
 	{{- template "launchmetrics_files" . }}
 {{ end }}
 
+{{ if ne .profile "personal" }}
+	{{- template "personal_files" . }}
+{{ end }}
+
 {{- if (not (stat (joinPath .chezmoi.homeDir "/.password-store"))) }}
 .databrickscfg
 .npmrc
