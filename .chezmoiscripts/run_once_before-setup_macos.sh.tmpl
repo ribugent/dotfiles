@@ -5,7 +5,13 @@
 set -euo pipefail
 
 
-OS=$(uname)
+OS="{{ .chezmoi.os }}"
+PROFILE="{{ .profile }}"
+
+# TODO: not ready for personal yet
+if [[ $PROFILE == "personal" ]]; then
+	exit 0
+fi;
 
 if [[ "$OS" != "Darwin" ]]; then
 	exit 0

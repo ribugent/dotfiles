@@ -5,6 +5,12 @@ set -euo pipefail
 
 OS="{{ .chezmoi.os }}"
 DISTRO="{{ if eq .chezmoi.os "linux" }}{{ .chezmoi.osRelease.id }}{{ end }}"
+PROFILE="{{ .profile }}"
+
+# TODO: not ready for personal yet
+if [[ $PROFILE == "personal" ]]; then
+	exit 0
+fi;
 
 if [[ "$OS" != "linux" && "$DISTRO" != "arch" ]]; then
 	exit 0
