@@ -11,6 +11,14 @@
 	{{- template "arch_files" . }}
 {{ end  }}
 
+{{ if ne .profile "launchmetrics" }}
+	{{- template "launchmetrics_files" . }}
+{{ end }}
+
+{{ if ne .profile "personal" }}
+	{{- template "personal_files" . }}
+{{ end }}
+
 # Old files to remove
 .config/code-flags.conf
 .config/fish/conf.d/vars.fish
