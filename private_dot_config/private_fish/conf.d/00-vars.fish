@@ -18,6 +18,7 @@ if test (uname) = "Darwin"
     fish_add_path $HOMEBREW_PREFIX/opt/curl/bin
     fish_add_path $HOMEBREW_PREFIX/opt/coreutils/libexec/gnubin
     fish_add_path $HOMEBREW_PREFIX/opt/findutils/libexec/gnubin
+    fish_add_path $HOMEBREW_PREFIX/opt/gnu-sed/libexec/gnubin
 end
 
 set -x EDITOR nvim
