@@ -31,6 +31,9 @@
         ff = false
         colorMoved = default
 
+[merge]
+        conflictstyle = diff3
+
 [difftool "vscode"]
     cmd = code --new-window --wait --diff $LOCAL $REMOTE
 
@@ -75,7 +78,3 @@
 
 [delta "themes"]
     syntax-theme = OneHalfDark
-
-[merge]
-    conflictstyle = diff3
-
