@@ -1,4 +1,4 @@
 autopep8
-distutils
 poetry
+setuptools
 virtualenv
