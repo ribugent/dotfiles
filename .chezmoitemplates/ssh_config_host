@@ -11,6 +11,9 @@ Host {{ .host -}}
 {{if hasKey . "identityFile" }}
 	IdentityFile {{ .identityFile}}
 {{- end -}}
+{{if hasKey . "proxyCommand" }}
+	ProxyCommand {{ .proxyCommand}}
+{{- end -}}
 {{if hasKey . "updateHostKeys" }}
 	UpdateHostKeys {{ .updateHostKeys}}
 {{- end -}}
