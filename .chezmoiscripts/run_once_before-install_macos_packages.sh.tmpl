@@ -10,4 +10,4 @@ if [[ $OS != "darwin" ]]; then
 fi;
 
 cd "{{ .chezmoi.workingTree }}"
-brew bundle --file macos/Brewfile --no-lock
+brew bundle install --file macos/Brewfile
