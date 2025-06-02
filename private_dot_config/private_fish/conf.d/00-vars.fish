@@ -28,3 +28,5 @@ set -x SAM_CLI_TELEMETRY 0
 set -x VIRTUAL_ENV_DISABLE_PROMPT 1
 set -x grc_plugin_ignore_execs df
 set -x theme_nerd_fonts yes
+
+bind ctrl-c cancel-commandline
