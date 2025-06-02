@@ -503,7 +503,7 @@
 			<key>ASCII Anti Aliased</key>
 			<true/>
 			<key>ASCII Ligatures</key>
-			<true/>
+			<false/>
 			<key>Ambiguous Double Width</key>
 			<false/>
 			<key>Ansi 0 Color</key>
@@ -1045,7 +1045,7 @@
 	<key>SaveScrollBufferWhenClearing</key>
 	<true/>
 	<key>ShowFullScreenTabBar</key>
-	<true/>
+	<false/>
 	<key>ShowSecureKeyboardEntryIndicator</key>
 	<false/>
 	<key>SmartPlacement</key>
