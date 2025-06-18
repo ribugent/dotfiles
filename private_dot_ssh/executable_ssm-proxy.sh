@@ -26,12 +26,13 @@ then
     ID="${CREDENTIALS[0]}"
 
     if [ -n "${CREDENTIALS[1]}" ]; then
-        export AWS_REGION="${CREDENTIALS[1]}"
+        export AWS_PROFILE="${CREDENTIALS[1]}"
     fi
 
-    if [ -n "${CREDENTIALS[2]}" ]; then
-        export AWS_PROFILE="${CREDENTIALS[2]}"
+    if [ -n "${CREDENTIALS[2]:-}" ]; then
+        export AWS_REGION="${CREDENTIALS[2]}"
     fi
+
 fi
 
 #################################################
