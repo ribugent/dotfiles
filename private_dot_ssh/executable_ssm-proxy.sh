@@ -24,8 +24,14 @@ if echo "${ID}" | grep -qe "${IFS}"
 then
     read -a CREDENTIALS <<< "${ID}"
     ID="${CREDENTIALS[0]}"
-    export AWS_DEFAULT_REGION="${CREDENTIALS[1]}"
-    export AWS_PROFILE="${CREDENTIALS[2]}"
+
+    if [ -n "${CREDENTIALS[1]}" ]; then
+        export AWS_REGION="${CREDENTIALS[1]}"
+    fi
+
+    if [ -n "${CREDENTIALS[2]}" ]; then
+        export AWS_PROFILE="${CREDENTIALS[2]}"
+    fi
 fi
 
 #################################################
@@ -37,16 +43,14 @@ if [[ ${ID} =~ ${IPV4_PATTERN} ]]; then
     ID=$(aws ec2 describe-instances \
         --filters "Name=private-ip-address,Values=${ID}" \
         --query 'Reservations[0].Instances[0].InstanceId' \
-        --output text \
-        --region ${AWS_DEFAULT_REGION} \
-        --profile ${AWS_PROFILE})
+        --output text)
 fi
 
 #################################################
 # Add public key to instance
 #################################################
 
->/dev/stderr echo "Auth: ${SSH_USER}@${ID} ${AWS_DEFAULT_REGION} ${AWS_PROFILE}"
+>/dev/stderr echo "Auth: ${SSH_USER}@${ID} ${AWS_REGION:-} ${AWS_PROFILE:-}"
 
 aws ssm send-command \
   --instance-ids "${ID}" \
