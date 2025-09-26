@@ -51,7 +51,7 @@ fi
 # Add public key to instance
 #################################################
 
->/dev/stderr echo "Auth: ${SSH_USER}@${ID} ${AWS_REGION:-} ${AWS_PROFILE:-}"
+>/dev/stderr echo "Auth: ${SSH_USER}@${ID} ${AWS_PROFILE:-} ${AWS_REGION:-}"
 
 aws ssm send-command \
   --instance-ids "${ID}" \
