@@ -30,10 +30,14 @@
 	<string>https://api.openai.com/v1/responses</string>
 	<key>AllowClipboardAccess</key>
 	<true/>
+	<key>BracketedPasteMode</key>
+	<false/>
 	<key>Command</key>
 	<string></string>
 	<key>Control</key>
 	<integer>1</integer>
+	<key>ConvertDosNewlines</key>
+	<true/>
 	<key>Custom Color Presets</key>
 	<dict>
 		<key>Breeze</key>
@@ -383,6 +387,8 @@
 	<key>Default Browser Profile Guid</key>
 	<string>BAA73B8C-A570-4AC0-9EB7-05075D00A76F</string>
 	<key>EnableProxyIcon</key>
+	<false/>
+	<key>EscapeShellCharsWithBackslash</key>
 	<false/>
 	<key>FunctionKey</key>
 	<integer>10</integer>
@@ -996,6 +1002,8 @@
 			<string></string>
 			<key>Show Mark Indicators</key>
 			<false/>
+			<key>Show Offscreen Command line</key>
+			<false/>
 			<key>Show Status Bar</key>
 			<false/>
 			<key>Silence Bell</key>
@@ -1033,6 +1041,12 @@
 	<key>OpenArrangementAtStartup</key>
 	<false/>
 	<key>OpenNoWindowsAtStartup</key>
+	<false/>
+	<key>PasteSpecialRegex</key>
+	<string></string>
+	<key>PasteSpecialSubstitution</key>
+	<string></string>
+	<key>PasteSpecialUseRegexSubstitution</key>
 	<false/>
 	<key>PasteTabToStringTabStopSize</key>
 	<integer>4</integer>
@@ -1088,6 +1102,8 @@
 	<key>SmartPlacement</key>
 	<true/>
 	<key>SoundForEsc</key>
+	<false/>
+	<key>SshIntegrationForURLs</key>
 	<false/>
 	<key>StatusBarPosition</key>
 	<integer>0</integer>
