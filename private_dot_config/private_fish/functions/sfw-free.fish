@@ -1,0 +1,5 @@
+alias npm 'sfw npm'
+alias yarn 'sfw yarn'
+alias pnpm 'sfw pnpm'
+alias pip 'sfw pip'
+alias pip3 'sfw pip3'
