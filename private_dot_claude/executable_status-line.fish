@@ -122,10 +122,31 @@ function __claude_segment_usage -S -a transcript -a model_id
 end
 
 function __claude_segment_git -S
-    set -l real_pwd (pwd -P 2>/dev/null; or echo $PWD)
-    set -l git_root (__bobthefish_git_project_dir $real_pwd)
-    test -n "$git_root"; or return
-    __bobthefish_prompt_git $git_root $real_pwd
+    # Mirrors __bobthefish_prompt_git's branch+flags segment, without the
+    # project-path segment that wrapper prepends.
+    command git rev-parse --is-inside-work-tree >/dev/null 2>&1; or return
+
+    set -l dirty (command git diff --no-ext-diff --quiet --exit-code 2>/dev/null; or echo -n $git_dirty_glyph)
+    set -l staged (command git diff --cached --no-ext-diff --quiet --exit-code 2>/dev/null; or echo -n $git_staged_glyph)
+    set -l stashed (__bobthefish_git_stashed)
+    set -l ahead (__bobthefish_git_ahead)
+
+    set -l untracked ''
+    set -l untracked_files (command git ls-files --other --exclude-standard --directory --no-empty-directory 2>/dev/null | head -n 1)
+    test -n "$untracked_files"; and set untracked $git_untracked_glyph
+
+    set -l flags "$dirty$staged$stashed$ahead$untracked"
+    test -n "$flags"; and set flags " $flags"
+
+    set -l flag_colors $color_repo
+    if test -n "$dirty"
+        set flag_colors $color_repo_dirty
+    else if test -n "$staged"
+        set flag_colors $color_repo_staged
+    end
+
+    __bobthefish_start_segment $flag_colors
+    echo -ns (__bobthefish_git_branch) $flags ' '
 end
 
 function __claude_segment_cost -S -a usd
