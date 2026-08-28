@@ -1,25 +1,15 @@
 #!/usr/bin/env bash
 
-_use_curses() {
-    # Invoked by Claude CLI — force GUI so it doesn't fight the TUI
-    if ! command -v pstree &>/dev/null; then
-        echo "pinentry-macos.sh: pstree not found, falling back to pinentry-curses" >&2
-        return 0
-    fi
-    if pstree -p $$ 2>/dev/null | grep -qi 'claude'; then
-        return 1
-    fi
+_sentinel="/tmp/.claude-gpg-signing"
 
-    # Has a controlling terminal
-    if [ -n "$TERM" ] && [ "$TERM" != "dumb" ] && tty -s 2>/dev/null; then
-        return 0
-    fi
-
-    return 1
+_claude_active() {
+  [ -f "$_sentinel" ] || return 1
+  local age=$(($(date +%s) - $(/usr/bin/stat -f %m "$_sentinel")))
+  [ "$age" -lt 120 ]
 }
 
-if _use_curses; then
-    exec /opt/homebrew/bin/pinentry-curses "$@"
+if _claude_active; then
+  exec /opt/homebrew/bin/pinentry-mac "$@"
 else
-    exec /opt/homebrew/bin/pinentry-mac "$@"
+  exec /opt/homebrew/bin/pinentry-curses "$@"
 fi
