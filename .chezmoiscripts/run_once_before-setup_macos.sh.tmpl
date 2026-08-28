@@ -23,6 +23,11 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 defaults write com.ijhack.QtPass.plist gitExecutable -string "$(brew --prefix)/bin/git"
 defaults write com.ijhack.QtPass.plist gpgExecutable -string "$(brew --prefix)/bin/gpg"
 
+# Pinentry macos do not bother with keychain and use gpg-agent for pinentry
+defaults write org.gpgtools.common DisableKeychain -bool yes
+defaults write org.gpgtools.common UseKeychain -bool no # Maybe this isn't correct at all
+defaults write org.gpgtools.pinentry-mac UseKeychain -bool NO
+
 # Quaratine bit removal from some apps which are safe bit not signed
 sudo /usr/bin/xattr -r -d com.apple.quarantine \
 	/Applications/DiscreteScroll.app \
