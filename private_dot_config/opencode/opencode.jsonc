@@ -1,0 +1,14 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "shell": "fish",
+  "plugin": [
+    "superpowers@git+https://github.com/obra/superpowers.git",
+    "@dietrichgebert/ponytail",
+  ],
+  "mcp": {
+    "atlassian": {
+      "type": "remote",
+      "url": "https://cf.mcp.atlassian.com/v1/mcp",
+    },
+  },
+}
