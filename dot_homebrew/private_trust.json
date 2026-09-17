@@ -1,16 +1,18 @@
 {
   "trustedformulae": [
+    "anomalyco/tap/opencode",
     "btrachey/pyenv/pyenv-default-packages",
     "danielgatis/imgcat/imgcat",
     "databricks/tap/databricks",
-    "datadog-labs/pack/pup",
     "huseyinbabal/tap/taws",
-    "lexiforest/tap/curl-impersonate",
     "nodenv/nodenv/nodenv-nvmrc",
+    "steipete/tap/codexbar",
     "valkyrie00/bbrew/bbrew",
     "withgraphite/tap/graphite"
   ],
   "trustedtaps": [
-    "launchmetrics/tap"
+    "datadog-labs/pack",
+    "launchmetrics/tap",
+    "lexiforest/tap"
   ]
 }
