@@ -1,10 +1,9 @@
 {
   "$schema": "https://opencode.ai/tui.json",
-  "leader_timeout": 2000,
   "keybinds": {
+    "messages_first": "none",
+    "messages_last": "none",
     "input_line_home": "home",
-    "input_line_end": "end",
-	"input_buffer_home": "none",
-    "input_buffer_end": "none"
+    "input_line_end": "end"
   }
 }
