@@ -8,18 +8,11 @@ url="https://github.com/ribugent/dotfiles"
 license=('GPL')
 groups=("ribugent")
 depends=("diffutils")
-makedepends=()
-optdepends=()
-provides=()
-conflicts=()
-replaces=()
 backup=(
 	"etc/docker/daemon.json"
 	"etc/sddm.conf.d/kde_settings.conf"
 )
-options=()
 install="config.install"
-changelog=
 source=(
 	"clamav-clamd.conf"
 	"docker-daemon.json"
@@ -38,7 +31,6 @@ source=(
 	"xorg-monitor.conf"
 )
 
-noextract=()
 sha256sums=('f0dfbb551261100c52624e836077be0155ea3d67c8c0c913ce2d4b3991348d72'
             'de77a8cdc33cd14fb1a7fcf4730b320438929df33e307a575912304b7de84472'
             'cf37a77108f3c0f47f7d8058102e9ac3441772d78a11acbcdc89d6498f09b7cf'
