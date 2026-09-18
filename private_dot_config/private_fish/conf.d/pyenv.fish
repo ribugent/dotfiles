@@ -1,3 +1,7 @@
-# set -x fish_user_paths $HOME/.pyenv/shims $fish_user_paths
-status is-login; and pyenv init --path | source
-status is-interactive; and pyenv init - | source
+fish_add_path --global --prepend $HOME/.pyenv/shims
+
+function pyenv
+    functions -e pyenv
+    source (command pyenv init - | psub)
+    pyenv $argv
+end
