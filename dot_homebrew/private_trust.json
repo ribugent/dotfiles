@@ -1,6 +1,5 @@
 {
   "trustedformulae": [
-    "anomalyco/tap/opencode",
     "btrachey/pyenv/pyenv-default-packages",
     "danielgatis/imgcat/imgcat",
     "databricks/tap/databricks",
@@ -14,5 +13,8 @@
     "datadog-labs/pack",
     "launchmetrics/tap",
     "lexiforest/tap"
+  ],
+  "trustedcasks": [
+    "nateships/tap/rolle"
   ]
 }
