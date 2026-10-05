@@ -32,6 +32,8 @@
 	<true/>
 	<key>BracketedPasteMode</key>
 	<false/>
+	<key>ClaudeCodeWorkgroupUpsellSuppressed</key>
+	<true/>
 	<key>Command</key>
 	<string></string>
 	<key>Control</key>
