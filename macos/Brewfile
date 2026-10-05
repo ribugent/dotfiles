@@ -6,6 +6,7 @@ tap "datadog-labs/pack", trusted: true
 tap "huseyinbabal/tap"
 tap "launchmetrics/tap", trusted: true
 tap "lexiforest/tap", trusted: true
+tap "nateships/tap"
 tap "nodenv/nodenv"
 tap "steipete/tap"
 tap "valkyrie00/bbrew", "https://github.com/Valkyrie00/homebrew-bbrew"
@@ -68,8 +69,6 @@ brew "fzf"
 brew "gcc"
 # Graphics library to dynamically manipulate images
 brew "gd"
-# Interact with Google Gemini AI models from the command-line
-brew "gemini-cli"
 # GitHub command-line tool
 brew "gh"
 # Distributed revision control system
@@ -96,6 +95,8 @@ brew "gping"
 brew "grc"
 # Smarter Dockerfile linter to validate best practices
 brew "hadolint"
+# Agent multiplexer that lives in your terminal
+brew "herdr"
 # Command-line hex viewer
 brew "hexyl"
 # Improved top (interactive process viewer)
@@ -142,6 +143,10 @@ brew "node-build"
 brew "nodenv"
 # CLI tool to sign and verify OCI artifacts and container images
 brew "notation"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# AI coding agent, built for the terminal
+brew "opencode"
 # Development kit for the Java programming language
 brew "openjdk@17"
 # Development kit for the Java programming language
@@ -170,8 +175,6 @@ brew "pyenv"
 brew "qrtool"
 # Persistent key-value database, with built-in net interface
 brew "redis"
-# Search tool like grep and The Silver Searcher
-brew "ripgrep"
 # Utility that provides fast incremental file transfer
 brew "rsync"
 # CLI proxy to minimize LLM token consumption
@@ -212,8 +215,6 @@ brew "yt-dlp"
 brew "zip"
 # Find security issues in GitHub Actions setups
 brew "zizmor"
-# The AI coding agent built for the terminal.
-brew "anomalyco/tap/opencode", trusted: true
 brew "btrachey/pyenv/pyenv-default-packages", trusted: true
 # Display images and gifs in your terminal
 brew "danielgatis/imgcat/imgcat", trusted: true
@@ -228,7 +229,7 @@ brew "lexiforest/tap/curl-impersonate"
 # Activate Node version from .nvmrc
 brew "nodenv/nodenv/nodenv-nvmrc", trusted: true
 # Menu bar usage and status CLI
-brew "steipete/tap/codexbar", link: false, trusted: true
+brew "steipete/tap/codexbar", trusted: true
 # Modern TUI for managing Homebrew packages and casks on macOS and Linux
 brew "valkyrie00/bbrew/bbrew", trusted: true
 # Allows you to manage your stacked changes and submit them for review on GitHub
@@ -243,12 +244,16 @@ cask "adobe-acrobat-reader"
 cask "another-redis-desktop-manager"
 # Agent orchestration platform
 cask "antigravity"
+# Terminal interface for Antigravity agents
+cask "antigravity-cli"
 # OpenAI's official ChatGPT desktop app
 cask "chatgpt"
 # Anthropic's official Claude AI desktop app
 cask "claude"
 # Terminal-based AI coding assistant
 cask "claude-code"
+# OpenAI's coding agent that runs in your terminal
+cask "codex"
 # Menu bar usage monitor for Codex and Claude
 cask "codexbar"
 # Brings the power of Copilot coding agent directly to your terminal
@@ -283,6 +288,8 @@ cask "font-lato"
 cask "font-times-new-roman"
 cask "font-trebuchet-ms"
 cask "font-verdana"
+# Disk space cleaner that finds and deletes duplicated and similar files
+cask "gemini"
 # Free and open-source image editor
 cask "gimp"
 # Web browser
@@ -336,6 +343,8 @@ cask "openrgb"
 cask "postman"
 # Multi-platform GUI for pass, the standard unix password manager
 cask "qtpass"
+# Assume any role, any cloud
+cask "nateships/tap/rolle", trusted: true
 # Plugin for AWS CLI to start and end sessions that connect to managed instances
 cask "session-manager-plugin"
 # Cross-platform binary with OS and architecture specific downloads
