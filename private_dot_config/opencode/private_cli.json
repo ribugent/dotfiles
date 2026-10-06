@@ -1,0 +1,23 @@
+{
+  "$schema": "https://opencode.ai/v2/cli.json",
+  "keybinds": {
+    "session.first": "none",
+    "session.last": "none",
+    "input.line.home": "home",
+    "input.line.end": "end"
+  },
+  "attention": {
+    "enabled": true,
+    "notifications": true
+  },
+  "diffs": {
+    "wrap": "word"
+  },
+  "session": {
+    "sidebar": "auto",
+    "scrollbar": false,
+    "thinking": "hide"
+  },
+  "animations": true,
+  "plugins": ["./herdr-opencode"]
+}
