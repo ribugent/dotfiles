@@ -410,7 +410,7 @@
 			<key>Text</key>
 			<string></string>
 		</dict>
-		<key>0xf700-0x220000-0x7e</key>
+		<key>0xf700-0x220000-0x7e-0x1</key>
 		<dict>
 			<key>Action</key>
 			<integer>7</integer>
@@ -423,7 +423,7 @@
 			<key>Version</key>
 			<integer>2</integer>
 		</dict>
-		<key>0xf701-0x220000-0x7d</key>
+		<key>0xf701-0x220000-0x7d-0x1</key>
 		<dict>
 			<key>Action</key>
 			<integer>6</integer>
