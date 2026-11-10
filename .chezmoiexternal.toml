@@ -7,8 +7,3 @@
     type = "file"
     url = "https://raw.githubusercontent.com/junegunn/fzf-git.sh/refs/heads/main/fzf-git.sh"
     refreshPeriod = "168h"
-
-[".config/fish/conf.d/iterm2.fish"]
-    type= "file"
-    url = "https://iterm2.com/shell_integration/fish"
-    refreshPeriod = "168h"
