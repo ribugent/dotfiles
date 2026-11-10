@@ -183,6 +183,8 @@ brew "rtk"
 brew "rustup"
 # Terminal multiplexer with VT100/ANSI terminal emulation
 brew "screen"
+# Static analysis and lint tool, for (ba)sh scripts
+brew "shellcheck"
 # Open agent skills ecosystem
 brew "skills"
 # Cross-shell prompt for astronauts
@@ -193,6 +195,8 @@ brew "telnet"
 brew "tfenv"
 # Text interface for Git repositories
 brew "tig"
+# Discovery, extraction and processing for Web text
+brew "trafilatura"
 # Extraction utility for .zip compressed archives
 brew "unzip"
 # Utility to track your highest uptimes
@@ -254,7 +258,7 @@ cask "claude"
 cask "claude-code"
 # OpenAI's coding agent that runs in your terminal
 cask "codex"
-# Menu bar usage monitor for Codex and Claude
+# Menu bar app for tracking agentic coding limits and usage
 cask "codexbar"
 # Brings the power of Copilot coding agent directly to your terminal
 cask "copilot-cli"
