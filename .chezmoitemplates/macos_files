@@ -1,6 +1,7 @@
 .homebrew/
 .config/karabiner/
 .config/fish/conf.d/gnupg.fish
+.config/fish/conf.d/iterm2.fish
 .config/pip/pip.conf
 .config/fish/functions/clear.fish
 .hushlogin
