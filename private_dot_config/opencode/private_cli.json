@@ -6,10 +6,6 @@
     "input.line.home": "home",
     "input.line.end": "end"
   },
-  "attention": {
-    "enabled": true,
-    "notifications": true
-  },
   "diffs": {
     "wrap": "word"
   },
