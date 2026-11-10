@@ -64,6 +64,11 @@
         pager = delta
         ignorecase = false
 
+{{ if eq .chezmoi.os "darwin" }}
+[http]
+	sslCAInfo = /opt/homebrew/etc/ca-certificates/cert.pem
+{{ end }}
+
 # Git-delta config
 [interactive]
     diffFilter = delta --color-only
