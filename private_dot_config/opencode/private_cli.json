@@ -6,6 +6,10 @@
     "input.line.home": "home",
     "input.line.end": "end"
   },
+  "attention": {
+    "enabled": true,
+    "notifications": true
+  },
   "diffs": {
     "wrap": "word"
   },
@@ -15,5 +19,11 @@
     "thinking": "hide"
   },
   "animations": true,
-  "plugins": ["./herdr-opencode"]
+  "plugins": [
+    "./herdr-opencode",
+    "opencode-terminal-progress"
+  ],
+  "theme": {
+    "name": "opencode"
+  }
 }
